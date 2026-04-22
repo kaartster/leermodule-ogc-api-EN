@@ -103,7 +103,7 @@ You have now seen what you can do with the OpenAPI specification (Swagger UI). D
 
 !!! info "OpenAPI specification Swagger UI"
 
-    We will use this much more in [one of the next sections](<../features/Bevraag OGC API - Features met curl.md>).
+    We will use this much more in [one of the next sections](<../features/query-ogc-api-features-with-curl.md>).
 
 **:arrow_right: Return to the landing page (click BGT in the breadcrumb).**
 
@@ -123,7 +123,7 @@ We also see that some standards are still draft versions.
 
 ### Collections
 
-We do not explore this page here. We cover it in the [OGC API - Features](../features/Introductie.md) section.
+We do not explore this page here. We cover it in the [OGC API - Features](../features/introduction.md) section.
 
 ## OGC API - Tiles components
 
@@ -143,15 +143,15 @@ The BGT dataset is offered as vector tiles in multiple map projections. A client
 
     Traditionally, map tiles are images. A Web Map Service (WMS), for example, serves `png` or `jpeg` image tiles. Images load fast, but must be rendered server-side and users cannot easily choose styles. Zooming can become pixelated. Vector tiles solve this by simplifying vector data and splitting it into tiles. They combine vector flexibility with raster-like speed.
 
-    See also [Raster or vector data?](<../achtergrondinformatie/Wat is geo-informatie.md/#raster-or-vector-data>). 
+    See also [Raster or vector data?](<../background-information/what-is-geoinformation.md/#raster-or-vector-data>). 
 
 On this page you find the available Tile Matrix Sets. Each projection has its own set.
 
-![alt text](../assets/achtergrondinformatie/Projection_conique.jpg){ width="250" }![alt text](../assets/achtergrondinformatie/Projection_cylindrique.jpg){ width="250" }![alt text](../assets/achtergrondinformatie/Projection_azimutale_stereographique.jpg){ width="250" }
+![alt text](../assets/background-information/Projection_conique.jpg){ width="250" }![alt text](../assets/background-information/Projection_cylindrique.jpg){ width="250" }![alt text](../assets/background-information/Projection_azimutale_stereographique.jpg){ width="250" }
 
 !!! info "Coordinate reference systems and map projections"
 
-    For more background, see [Background information](<../achtergrondinformatie/Wat is geo-informatie.md/#what-are-coordinate-reference-systems>).
+    For more background, see [Background information](<../background-information/what-is-geoinformation.md/#what-are-coordinate-reference-systems>).
 
 **:arrow_right: Click around this page.**
 

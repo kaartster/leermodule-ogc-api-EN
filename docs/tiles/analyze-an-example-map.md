@@ -6,7 +6,7 @@ You just explored what you can do with OGC API - Tiles through the landing page.
 
 First, we view the example web map in a browser.
 
-**:arrow_right: Open** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html)
+**:arrow_right: Open** [../examples/tiles/index.html](../examples/tiles/index.html)
 
 **:arrow_right: Open the map itself and zoom in and out**
 
@@ -16,7 +16,7 @@ This is a web viewer built with the MapLibre library. This map uses the BRT Back
 
     BRT stands for Basisregistratie Topografie (Topography Registry). Do not confuse it with BGT: Basisregistratie *Grootschalige* Topografie. BRT is intended for small-scale topography: scale 1:250,000 to 1:10,000. That makes BRT ideal as a basemap.
 
-    BRT is a base registry. [More information about base registries can be found here](<../achtergrondinformatie/Wat is geo-informatie.md/#base-registries>).
+    BRT is a base registry. [More information about base registries can be found here](<../background-information/what-is-geoinformation.md/#base-registries>).
 
 ![BRT Background Map](../assets/tiles/brtachtergrondkaart.png)
 
@@ -108,7 +108,7 @@ Let’s run this code first so we can see the application in a browser:
 > python -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
-**:arrow_right: Now open** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html) **in your browser**
+**:arrow_right: Now open** [../examples/tiles/index.html](../examples/tiles/index.html) **in your browser**
 
 ![example map built with maplibre](../assets/tiles/brtachtergrondkaart.png)
 

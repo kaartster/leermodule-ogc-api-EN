@@ -15,22 +15,22 @@ OGC APIs make geodata available. But what is geodata, also called **spatial info
 
 Geoinformation is any information with a location component. How is it stored and made available, and what can you do with it?
 
-[**Read more**](<Wat is geo-informatie.md>)
+[**Read more**](<what-is-geoinformation.md>)
 
 ## What do Kadaster / PDOK do?
 
 This learning module was developed by PDOK. PDOK is the platform for high-quality geodata. PDOK is a service of Kadaster. What exactly does PDOK do and what is Kadaster’s role?
 
-[**Read more**](<Wat doet het Kadaster - PDOK.md>)
+[**Read more**](<what-do-kadaster-pdok-do.md>)
 
 ## What are OGC APIs?
 
 This learning module is all about OGC APIs. They are standardized interfaces with which users and systems can query and view geodata via the internet. The OGC API standard defines exactly how that interface should be structured.
 
-[**Read more**](<Wat zijn OGC APIs.md>)
+[**Read more**](<what-are-ogc-apis.md>)
 
 ## The importance of standards
 
 Without standards, we get nowhere. Standards define how information should be exchanged. Why is it important to exchange geodata in a standardized way?
 
-[**Read more**](<Het belang van standaarden.md>)
+[**Read more**](<the-importance-of-standards.md>)

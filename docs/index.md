@@ -20,7 +20,7 @@ The overview below shows how the OGC API standard is built from building blocks.
 
 !!! info "OGC API building blocks"
 
-For more information about the OGC API building blocks, see [Background information](./achtergrondinformatie/Wat zijn OGC APIs.md)
+For more information about the OGC API building blocks, see [Background information](./background-information/what-are-ogc-apis.md)
 
 ## Who is this learning module for?
 
@@ -66,10 +66,10 @@ Then you can skip **Background information** and start directly with **OGC API �
 
 | Part | Description |
 | ----------- | ----------- |
-| [Background information](./achtergrondinformatie/Introductie.md) | *What is geographic data? What are OGC APIs? And what does PDOK do?* |
-| [OGC API – Tiles](./tiles/Introductie.md) | *View geodata on the map* |
-| [OGC API – Features](./features/Introductie.md) | *Build an interactive map: request object information and work with data interactively* |
-| [Wrap-up](Afronding.md) |  |
+| [Background information](./background-information/introduction.md) | *What is geographic data? What are OGC APIs? And what does PDOK do?* |
+| [OGC API – Tiles](./tiles/introduction.md) | *View geodata on the map* |
+| [OGC API – Features](./features/introduction.md) | *Build an interactive map: request object information and work with data interactively* |
+| [Wrap-up](wrap-up.md) |  |
 
 ## Join in!
 

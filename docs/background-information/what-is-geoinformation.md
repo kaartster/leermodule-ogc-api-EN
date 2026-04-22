@@ -99,20 +99,20 @@ Examples of vector datasets at PDOK:
 Geodata is always stored in a specific coordinate reference system (CRS). The CRS determines how coordinates are stored. In other words: how a position on Earth is determined. The Earth is not flat, although maps are. Unfortunately, Earth is also not perfectly round or oval.
 
 <div style="text-align: center;">
-    <img src="../../assets/achtergrondinformatie/geoid-c2.jpg" alt="Geoid" width=40% />
+    <img src="../../assets/background-information/geoid-c2.jpg" alt="Geoid" width=40% />
 </div>
 
 Earth looks more like a potato, with mountains and valleys. We call this a geoid. That geoid is infinitely complex, which makes it hard to store its exact shape in a computer. Therefore, people approximate it with an ellipsoid (3D oval). This leads to deviations: some places deviate more from the ellipsoid than others. But for many global-scale applications, some deviation is acceptable.
 
 <div style="text-align: center;">
-    <img src="../../assets/achtergrondinformatie/geoid1_lg.png" alt="Geoid" width=60% />
+    <img src="../../assets/background-information/geoid1_lg.png" alt="Geoid" width=60% />
 </div>
 
 For many applications, accuracy is important. Then you need an ellipsoid that closely matches the part of Earth you are interested in. In other parts of Earth, that ellipsoid may not match at all. This is called a local coordinate system. The Dutch national grid (Rijksdriehoeksstelsel), also called "RD Amersfoort", is such a local coordinate system. RD Amersfoort provides high accuracy in the Netherlands, but is not useful outside the Netherlands.
 
 We are still not done. What if you project that ellipsoid onto a flat surface? Imagine peeling a mandarin and trying to lay the peel flat in one piece—you get gaps. Map projections are ways to distort and stretch the globe so these gaps are filled. There are many different methods.
 
-![alt text](../assets/achtergrondinformatie/Projection_conique.jpg){ width="250" }![alt text](../assets/achtergrondinformatie/Projection_cylindrique.jpg){ width="250" }![alt text](../assets/achtergrondinformatie/Projection_azimutale_stereographique.jpg){ width="250" }
+![alt text](../assets/background-information/Projection_conique.jpg){ width="250" }![alt text](../assets/background-information/Projection_cylindrique.jpg){ width="250" }![alt text](../assets/background-information/Projection_azimutale_stereographique.jpg){ width="250" }
 
 In general, we distinguish three kinds of map projections:
 

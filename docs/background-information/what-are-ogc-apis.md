@@ -29,10 +29,10 @@ The table below shows which building blocks exist, whether they have been implem
 
 | Component                                            | Description                          | Available at PDOK? |                                   Learning module                                |
 |------------------------------------------------------|--------------------------------------|:------------------:|:---------------------------------------------------------------------------------:|
-| [**Common**](<https://ogcapi.ogc.org/common/>)       | The foundation for every OGC API     |         ✅         | [Features](<../features/Introductie.md>) and [Tiles](<../tiles/Introductie.md>) |
-| [**Features**](<https://ogcapi.ogc.org/features>)    | Vector data                          |         ✅         |                    [Features](<../features/Introductie.md>)                      |
-| [**Tiles**](<https://ogcapi.ogc.org/tiles>)          | Map tiles (visualization)            |         ✅         |                       [Tiles](<../tiles/Introductie.md>)                         |
-| [**Styles**](<https://ogcapi.ogc.org/styles>)        | Visualization rules                  |         ✅         |                       [Tiles](<../tiles/Introductie.md>)                         |
+| [**Common**](<https://ogcapi.ogc.org/common/>)       | The foundation for every OGC API     |         ✅         | [Features](<../features/introduction.md>) and [Tiles](<../tiles/introduction.md>) |
+| [**Features**](<https://ogcapi.ogc.org/features>)    | Vector data                          |         ✅         |                    [Features](<../features/introduction.md>)                      |
+| [**Tiles**](<https://ogcapi.ogc.org/tiles>)          | Map tiles (visualization)            |         ✅         |                       [Tiles](<../tiles/introduction.md>)                         |
+| [**Styles**](<https://ogcapi.ogc.org/styles>)        | Visualization rules                  |         ✅         |                       [Tiles](<../tiles/introduction.md>)                         |
 | [**Records**](<https://ogcapi.ogc.org/records>)      | Metadata                             |         ❌         |                                         ❌                                         |
 | [**Maps**](<https://ogcapi.ogc.org/maps>)            | Ready-to-use maps and map tiles      |         ❌         |                                         ❌                                         |
 | [**Coverages**](<https://ogcapi.ogc.org/coverages/>) | Raster data                          |         ❌         |                                         ❌                                         |
@@ -83,7 +83,7 @@ Building block for requesting raster data, including cell-level computations.
 
 Building block for Environment Data Retrieval (EDR): integrally querying spatial climate data that combines multiple dimensions. Think of querying humidity, temperature, and precipitation in 3D over time.
 
-![Overview of OGC APIs](../assets/achtergrondinformatie/ogcapis-overview.png)
+![Overview of OGC APIs](../assets/background-information/ogcapis-overview.png)
 
 * Processes
 * Moving Features

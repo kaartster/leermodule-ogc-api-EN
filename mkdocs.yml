@@ -39,26 +39,26 @@ plugins:
 nav:
     - Introduction: index.md
     - Background information: 
-        - Introduction: achtergrondinformatie/Introductie.md
-        - What is geoinformation?: achtergrondinformatie/Wat is geo-informatie.md
-        - What do Kadaster / PDOK do?: achtergrondinformatie/Wat doet het Kadaster - PDOK.md
-        - What are OGC APIs?: achtergrondinformatie/Wat zijn OGC APIs.md
-        - The importance of standards: achtergrondinformatie/Het belang van standaarden.md 
-        - Reflection: achtergrondinformatie/Terugblik.md
+        - Introduction: background-information/introduction.md
+        - What is geoinformation?: background-information/what-is-geoinformation.md
+        - What do Kadaster / PDOK do?: background-information/what-do-kadaster-pdok-do.md
+        - What are OGC APIs?: background-information/what-are-ogc-apis.md
+        - The importance of standards: background-information/the-importance-of-standards.md 
+        - Reflection: background-information/reflection.md
     - OGC API - Tiles: 
-        - Introduction: tiles/Introductie.md
-        - Explore OGC API - Tiles in the browser: tiles/Verken OGC API - Tiles in de browser.md
-        - Analyze an example map: tiles/Analyseer een voorbeeldkaart.md
-        - Case study - Build a map with OGC API - Tiles: tiles/Casus - Maak een kaart met OGC API - Tiles.md
-        - Reflection: tiles/Terugblik.md
+        - Introduction: tiles/introduction.md
+        - Explore OGC API - Tiles in the browser: tiles/explore-ogc-api-tiles-in-the-browser.md
+        - Analyze an example map: tiles/analyze-an-example-map.md
+        - Case study - Build a map with OGC API - Tiles: tiles/case-study-build-a-map-with-ogc-api-tiles.md
+        - Reflection: tiles/reflection.md
     - OGC API - Features:
-        - Introduction: features/Introductie.md
-        - Explore OGC API - Features in the browser: features/Verken OGC API - Features in de browser.md
-        - Query OGC API - Features with curl: features/Bevraag OGC API - Features met curl.md
-        - Case study - Analyze data with OGC API - Features in Python: features/Casus - Analyseer data met OGC API - Features met Python.md
-        - Reflection: features/Terugblik.md
-    - Wrap-up: Afronding.md
+        - Introduction: features/introduction.md
+        - Explore OGC API - Features in the browser: features/explore-ogc-api-features-in-the-browser.md
+        - Query OGC API - Features with curl: features/query-ogc-api-features-with-curl.md
+        - Case study - Analyze data with OGC API - Features in Python: features/case-study-analyze-data-with-ogc-api-features-in-python.md
+        - Reflection: features/reflection.md
+    - Wrap-up: wrap-up.md
     - Community: Community.md
     - References:
-        - Sources: referenties/features.md 
+        - Sources: references/sources.md 
 

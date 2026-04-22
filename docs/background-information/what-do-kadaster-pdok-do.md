@@ -20,7 +20,7 @@ You can also find more and more datasets on PDOK that are published as OGC APIs.
 
 PDOK is a service of Kadaster.
 
-![The power of PDOK](<../assets/achtergrondinformatie/2201_PDOK open data portaal definitief.jpg>)
+![The power of PDOK](<../assets/background-information/2201_PDOK open data portaal definitief.jpg>)
 
 ??? info "The power of PDOK"
 

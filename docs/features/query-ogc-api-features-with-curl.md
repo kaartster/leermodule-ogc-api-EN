@@ -88,7 +88,7 @@ This returns metadata such as `id`, `title`, `description`, `keywords`, and `ext
 
 !!! info "CRS"
 
-    You will also see CRS information. CRS (Coordinate Reference System) determines how geographic coordinates are stored and projected (see also [Background information](../achtergrondinformatie/Wat is geo-informatie.md)). PDOK offers data in multiple CRS values.
+    You will also see CRS information. CRS (Coordinate Reference System) determines how geographic coordinates are stored and projected (see also [Background information](../background-information/what-is-geoinformation.md)). PDOK offers data in multiple CRS values.
 
 ### View a collection schema
 

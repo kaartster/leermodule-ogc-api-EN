@@ -249,7 +249,7 @@ You now know how to browse OGC API - Features collections, filter in browser, an
 <a name="ogc-api---tiles-components"></a>
 ## OGC API - Tiles components
 
-We do not explore these pages here. See [OGC API - Tiles](../tiles/Introductie.md):
+We do not explore these pages here. See [OGC API - Tiles](../tiles/introduction.md):
 
 * Tiles
 * Styles

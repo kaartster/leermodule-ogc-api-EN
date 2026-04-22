@@ -113,7 +113,7 @@ If you already cloned this repository in [Analyze an example map](<./Analyseer e
     3. Use URL: <https://github.com/PDOK/leermodule-ogc-api>
     4. Choose destination and open repository.
     5. Trust authors if prompted.
-    6. Example code is in `docs/voorbeelden/tiles`.
+    6. Example code is in `docs/examples/tiles`.
     7. Create a new folder and copy the example code there.
     8. Start a local web server:
 
@@ -128,7 +128,7 @@ If you already cloned this repository in [Analyze an example map](<./Analyseer e
 
     1. Go to <https://github.com/PDOK/leermodule-ogc-api>
     2. Download ZIP and extract it.
-    3. Example code is in `docs/voorbeelden/tiles`.
+    3. Example code is in `docs/examples/tiles`.
     4. Create a new folder and copy example code there.
     5. Start a local web server:
 
@@ -294,7 +294,7 @@ For example, local style file:
 
     style: './yourstyle.json', // style URL
 
-A sample style is provided in [style_voorbeeld.json](../voorbeelden/tiles/style_voorbeeld.json).
+A sample style is provided in [style_voorbeeld.json](../examples/tiles/style_voorbeeld.json).
 
 For custom styles, use MapLibre style documentation: <https://maplibre.org/maplibre-style-spec/>
 
