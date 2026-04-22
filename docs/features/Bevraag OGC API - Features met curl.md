@@ -1,308 +1,166 @@
-# Bevraag OGC API - Features met curl
+# Query OGC API - Features with curl
 
-We hebben eerder gezien hoe je de API-documentatie in de browser kunt bekijken. Nu is het tijd om echt aan de slag te gaan met de API. 
-In de commandline kun je met behulp van de tool `cURL` data opvragen en versturen. Je kunt dit ook gebruiken om API's om data op te vragen en die data vervolgens terug te krijgen. Zo ook de OGC API's van PDOK. Je krijgt het resultaat terug als JSON-bestand. 
-Ontwikkelaars gebruiken dit principe om API's te implementeren in hun eigen applicaties. 
+We previously saw how to view API documentation in the browser. Now it is time to actually use the API.
+In the command line, you can use `curl` to request and send data. You can use it to query APIs and receive data back. The same applies to PDOK OGC APIs. Responses are returned as JSON.
+Developers use this principle to implement APIs in their own applications.
 
-In dit deel stel je met behulp van de OpenAPI specification GET requests samen om de OGC API - Features van de Basisregistratie Grootschalige Topografie (BGT) te bevragen. Die requests vuur je vervolgens met `curl` af. Het resultaat ontvang je als `json`. 
+In this section, you use the OpenAPI specification to compose GET requests and query the OGC API - Features of the BGT dataset. Then you execute those requests with `curl` and inspect JSON responses.
 
-## Voorbereiding
+## Preparation
 
-**:arrow_right: Open een commandline / terminal venster.** 
+**:arrow_right: Open a command line / terminal window.**
 
-!!! warning "Waarschuwing"
+!!! warning "Warning"
 
-    Gebruik niet de PowerShell terminal. Die heeft een ingebouwde eigen versie van `curl` met veel minder mogelijkheden. De voorbeelden zullen daar niet in werken. 
+    Do not use PowerShell for these examples. It has its own built-in `curl` with fewer capabilities.
 
-Met de OpenAPI specification pagina kun je heel makkelijk commando's voor `curl` samenstellen. 
+The OpenAPI specification page makes it easy to compose `curl` commands.
 
-**:arrow_right: Ga naar de OpenAPI specification van de BGT.**
-
-Weet je niet meer waar je die kunt vinden? Kijk dan even in één van de vorige onderdelen. 
+**:arrow_right: Go to the BGT OpenAPI specification.**
 
 ![BGT OpenAPI specification](../assets/features/bgt_openapi_specification.png)
 
-## OpenAPI specification opvragen
+## Request the OpenAPI specification
 
-Laten we beginnen met een simpele vraag. We vragen eerst de `OpenAPI specification` zelf op. 
+Let’s start with a simple request: retrieving the OpenAPI specification itself.
 
-**:arrow_right: Klap** 'GET `/api` This document' **open**:
+**:arrow_right: Expand** 'GET `/api` This document' **and execute it.**
 
 ![GET /api This document](../assets/get-api.png)
 
-**:arrow_right: Klik op *Try it out***
-
-**:arrow_right: Klik op *Execute***
-
-Je krijgt nu het `curl` commando dat is afgevuurd en het resultaat (response) te zien:
+You now see the generated `curl` command and response:
 
 ![curl get api specification](../assets/features/get-api-response.png)
 
-Er is één parameter meegegeven: geef het resultaat als json. En we krijgen de specificatie inderdaad netjes te zien als json-document. 
+One parameter is passed: return JSON.
 
-We kunnen het `curl` commando kopiëren en zelf uitvoeren in de commandline. 
+You can copy this command and run it yourself.
 
-!!! warning "Waarschuwing"
+!!! warning "Warning"
 
-    Pas voor de Windows commandline (`cmd.exe`) de kant-en-klare `curl` commando's aan: zet alles op één regel en verander de 'enkele quotes' in "dubbele quotes". Anders zullen de voorbeelden niet werken. 
+    For Windows command line (`cmd.exe`): put command on one line and replace single quotes with double quotes.
 
-**:arrow_right: Kopieer het** `curl` **commando en plak het in de commandline**
-
-Voor Windows:
+For Windows:
 
 ```
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/api?f=json" -H "accept: */*"
 ```
 
-![curl commando in cmd](../assets/features/curl-get-api.png)
+## Query collections
 
-**:arrow_right: Druk op Enter en bekijk het resultaat:**
+### Which collections exist?
 
-![resultaat in cmd](../assets/features/curl-get-api-response.png)
+Use `GET /collections`.
 
-## Vraag collecties op 
+**:arrow_right: Execute and inspect response.**
 
-We gaan met behulp van `curl` informatie over collecties opvragen. 
-
-### Welke collecties zijn er allemaal? 
-
-Stel dat je wilt weten welke collecties er allemaal zijn. Je kunt dan de `GET /collections` call gebruiken. 
-
-**:arrow_right: Klap** 'GET `/collections`' **open, klik op *Try it out* en klik op *Execute*.**
-
-**:arrow_right: Kopieer het commando en voer het uit in de commandline.** 
-
-Voor Windows:
+For Windows:
 
 ```
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections?f=json" -H "accept: */*"
 ```
 
-**:arrow_right: Bekijk het resultaat.** 
-
-Je krijgt een overzicht te zien van alle collecties in deze OGC API - Features. 
-
 Response body:
 ```
 {
-  "links": [
-    ...
-  ],
-  "collections": [
-    ...
-  ]
+  "links": [ ... ],
+  "collections": [ ... ]
 }
 ```
 
-!!! tip 
+!!! tip
 
-    Je kunt de URL's ook in je browser plakken en de `json` in je browser bekijken. Browsers maken `json` meestal wat beter leesbaar.
+    You can also open these URLs in a browser to inspect JSON.
 
-### Informatie over één specifieke collectie
+### Information about one specific collection
 
-Je kunt ook de informatie van een specifieke collectie opvragen. Laten we als voorbeeld de ['spoor' collectie](https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor) nemen. 
+Example: ['spoor' collection](https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor)
 
-![een spoorlijn](../assets/features/spoorcollectie.jpg)
+![railway example](../assets/features/spoorcollectie.jpg)
 
-Voor Windows:
+For Windows:
 
 ```
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor?f=json" -H "accept: */*"
 ```
 
-**:arrow_right: Voer dit uit en bekijk het resultaat.**
-
-Response body:
-```
-{
- "id": "spoor",
- "title": "Spoor (SPR)",
- "description": "De as van het spoor, dat wil zeggen het midden van twee stalen staven op een onderling vaste afstand, waarover trein, tram, of sneltram rijdt.",
- "keywords": [
-  ...
-    ],
- "extent": {
-    ...
-    }
- ...
-}
-```
-
-!!! question "Vraag"
-
-    Wat voor informatie geeft dit? 
+This returns metadata such as `id`, `title`, `description`, `keywords`, and `extent`.
 
 !!! info "CRS"
 
-    Het zal je opgevallen zijn dat er ook informatie tussen staat over het 'CRS'. Dit is het Coordinate Reference System. Er bestaan veel verschillende CRS'en. Kort gezegd bepaalt het CRS hoe de geografische coördinaten worden opgeslagen en hoe de data op de aardbol wordt geprojecteerd (zie ook [Achtergrondinformatie](../achtergrondinformatie/Wat is geo-informatie.md)). PDOK biedt zijn data in verschillende CRS'en aan. 
+    You will also see CRS information. CRS (Coordinate Reference System) determines how geographic coordinates are stored and projected (see also [Background information](../achtergrondinformatie/Wat is geo-informatie.md)). PDOK offers data in multiple CRS values.
 
-!!! question "Vraag"
-    
-    In welke CRS'en wordt de spoorcollectie aangeboden? Hoe heten die CRS'en? 
+### View a collection schema
 
-??? tip "Hint"
+To inspect available attributes and datatypes, request the schema:
 
-    Klik in <https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor?f=json> in het `crs` object op de code van een CRS. Je krijgt dan een XML-document te zien op opengis.net. Daarin vind je ook de naam. 
+For Windows:
 
-### Bekijk het schema van een collectie
+```
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/schema?f=json" -H "accept: */*"
+```
 
-Soms wil je weten welke kolommen een dataset heeft, en wat die kolommen precies betekenen en welk datatype ze zijn. Dit kun je bekijken in het schema. Ook OGC API - Features ondersteunt dit. 
+**:arrow_right: Execute and inspect the result.**
 
-!!! question "Vraag"
+## Request items
 
-    Hoe kun je het schema bekijken? 
+### Request items from a collection
 
-??? success "Bekijk het antwoord"
-    Voor Windows:
-    
-    ```
-    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/schema?f=json" -H "accept: */*"
-    ```
+Add `items` to request features:
 
-    Response body:
-
-        {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/schema",
-        "title": "Spoor (SPR)",
-        "description": "De as van het spoor, dat wil zeggen het midden van twee stalen staven op een onderling vaste afstand, waarover trein, tram, of sneltram rijdt.",
-        "type": "object",
-        "required": [
-        "id",
-        "version"
-        ],
-        "properties": {
-            "id"
-            ...
-        }
-
-**:arrow_right: Voer dit uit en bekijk het resultaat.**
-
-!!! question "Vraag"
-    In welke attributen vind je een datum/tijd? 
-
-## Vraag items op
-
-Laten we ook eens ín de collecties kijken. 
-
-### Vraag de items van een collectie op
-
-Door `items` toe te voegen aan de call voor een specifieke collectie, kunnen we de items zelf opvragen. 
-
-Voor Windows:
+For Windows:
 ```
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?f=json" -H "accept: */*"
 ```
 
-**:arrow_right: Voer dit uit en bekijk het resultaat.**
+A default item limit applies.
 
-!!! question "Vraag"
-    Hoeveel items heb je gekregen? 
+Set an explicit limit:
 
-Er is standaard een limiet op het aantal items. We kunnen ook zelf expliciet een limiet opgeven, die iets ruimer is.
+```
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?limit=100&f=json" -H "accept: */*"
+```
 
-!!! question "Vraag"
+### Request one specific item
 
-    Hoe kun je een limiet instellen op het aantal items? Zoek het antwoord op in de OpenAPI specification. 
+If you know the item ID:
 
-??? success "Bekijk het antwoord"
-    Voor Windows:
-
-    ```
-    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?limit=100&f=json" -H "accept: */*"
-    ```
-
-**:arrow_right: Voer dit uit en bekijk het resultaat.**
-
-### Vraag één specifiek item op
-
-Stel dat je geïnteresseerd bent in één specifiek item, dan kun je die door middel van een filter op het `id` van dat item opvragen. Je moet dan wel dat specifieke `id` weten. 
-
-Voor Windows:
+For Windows:
 ```
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items/7022ff26-12e4-5dc8-9a33-56db2da7e607?f=json" -H "accept: */*"
 ```
 
-**:arrow_right: Voer dit uit en bekijk het resultaat.**
+### Request items within a bounding box
 
-Response body:
-```
-{
-    "type": "Feature",
-    "properties": {
-        ...
-    },
-    "geometry": {
-        ...
-    }
-... 
-}
-```
+Use the `bbox` parameter: `xmin,ymin,xmax,ymax`.
 
-### Vraag items op binnen een bounding box
+![bounding box on map with coordinates](../assets/features/boundingbox.png)
 
-Laten we het ruimtelijk maken. Met een extra parameter kun je items opvragen binnen een specifiek gebied: een bounding box (ook wel `bbox`). Je vraagt dit gebied op met het x- en y-coördinaat van de linkeronderhoek, gevolgd door het x- en y-coördinaat van de rechterbovenhoek. Bijvoorbeeld: `4.458132,51.922276,4.478388,51.926696`
-
-![een bounding box op een kaart met coördinaten](../assets/features/boundingbox.png)
-
-Voor Windows:
+For Windows:
 ```
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?bbox=4.458132,51.922276,4.478388,51.926696&f=json" -H "accept: */*"
 ```
 
-**:arrow_right: Zoek zelf de coördinaten op van de bounding box van jouw woonplaats met behulp van** <http://bboxfinder.com>
+**:arrow_right: Find bbox coordinates for your own area using** <http://bboxfinder.com>.
 
-**:arrow_right: En vraag de spoorlijnen op binnen die bbox met behulp van** `curl`.
+### Request items in a specific CRS
 
-### Vraag items op in een bepaald CRS
+By default, features are returned in CRS84. You can request a different CRS.
 
-Standaard worden de features uitgeleverd in CRS84 coördinaatreferentiesysteem (CRS). Je kunt de features ook in andere CRS'en opvragen. Dit is handig wanneer je de data wilt combineren met datasets met een ander CRS, of voor projectie op een kaart. Met een parameter kun je aangeven in welk CRS je de data wilt terugkrijgen. 
+Check available CRS values for a collection:
 
-**:arrow_right: Vraag op in welke CRS'en de spoorcollectie beschikbaar is**
+```
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/put?f=json"  -H "accept: */*"
+```
 
-??? success "Bekijk het antwoord"
+Then request items in RD/Amersfoort:
 
-    Voor Windows:
+```
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?crs=http://www.opengis.net/def/crs/EPSG/0/28992&f=json"  -H "accept: */*"
+```
 
-    ```
-    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/put?f=json"  -H "accept: */*"
-    ```
+## Summary
 
-    Response body:
+In this section, you requested the OpenAPI specification, used it to compose API calls, queried collection metadata, and retrieved collection items via command line.
 
-        ...
-        "crs": [
-        "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
-        "http://www.opengis.net/def/crs/EPSG/0/28992",
-        "http://www.opengis.net/def/crs/EPSG/0/3857",
-        "http://www.opengis.net/def/crs/EPSG/0/4258"
-        ]
-        ...
-
-**:arrow_right: Vraag de items op in de RD/Amersfoort CRS**
-
-Voeg de parameter toe voor het crs en de URL van RD/Amersfoort toe. Kijk in de API specification als je er niet meteen uitkomt. 
-
-??? success "Bekijk het antwoord"
-
-    Voor Windows:
-
-    ```
-    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?crs=http://www.opengis.net/def/crs/EPSG/0/28992&f=json"  -H "accept: */*"
-    ```
-
-    Response body:
-
-        ...
-        {"type":"FeatureCollection",
-        ...
-        "features":[
-            ...
-        ]
-        ...
-        }
-        ...
-
-## Samenvatting
-
-Je hebt in de oefeningen hierboven de OpenAPI-specificatie opgevraagd waarmee je zelf API calls kunt samenstellen en voorbeelden van calls en responses kunt bekijken. Daarna heb je informatie over collecties opgevraagd en de items in die collecties opgevraagd. En dat allemaal in de commandline. Je kunt je voorstellen dat je dit soort calls in elk soort applicatie zou kunnen integreren. Hopelijk geeft dit onderdeel een goede basis voor de volgende onderdelen. 
+These same calls can be integrated into any application, giving you a solid foundation for the next sections.

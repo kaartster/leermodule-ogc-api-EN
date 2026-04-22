@@ -1,35 +1,35 @@
 # Community
 
-Als PDOK willen wij deze leermodule graag samen met jullie aanvullen en verbeteren. Wil je kennis en ervaringen uitwisselen met andere gebruikers en ontwikkelaars? Lees hier hoe je betrokken kunt raken bij de doorontwikkeling van deze leermodule en onderdeel kunt worden van de fantastische geocommunity! 
+At PDOK, we want to improve and expand this learning module together with you. Want to exchange knowledge and experiences with other users and developers? Read how you can get involved in the further development of this learning module and become part of the fantastic geo community.
 
-## Geef ons feedback en doe mee
+## Give us feedback and join in
 
-Wij zijn natuurlijk benieuwd naar hoe je deze leermodule hebt ervaren. Heb je na het afronden suggesties of opmerkingen, wil je ons feedback geven? [Maak dan een issue aan op GitHub](https://github.com/PDOK/leermodule-ogc-api/issues). 
+Of course, we are curious about your experience with this learning module. Do you have suggestions or comments after finishing? Want to share feedback? [Create an issue on GitHub](https://github.com/PDOK/leermodule-ogc-api/issues).
 
-Wij willen graag samen met jullie een community vormen om deze leermodule door te ontwikkelen. Heb jij de leermodule afgerond of ben jij een data-specialist, geo-specialist of docent/trainer met verstand van OGC API's? En lijkt het je leuk om samen met PDOK de leermodule naar een hoger plan te tillen? Doe met ons mee:
+We want to build a community together to further develop this learning module. Have you completed the module, or are you a data specialist, geo specialist, or teacher/trainer with OGC API knowledge? And would you like to help PDOK take the module to the next level? Join us:
 
-- :material-bullhorn-variant: **Spread the word! Deel de leermodule met anderen**
-- :material-laptop: **Ontwikkel met ons mee:**
-- :material-plus-box-outline: Verdiep de leermodule met uitbreidingen en verbeteringen op de bestaande onderdelen
-- :material-plus-box-multiple: Verbreed de leermodule met extra onderdelen
-- :material-file: Maak extra voorbeelden
-- :material-alert: Verbeter fouten
+- :material-bullhorn-variant: **Spread the word! Share the learning module with others**
+- :material-laptop: **Develop with us:**
+- :material-plus-box-outline: Deepen the learning module with extensions and improvements to existing sections
+- :material-plus-box-multiple: Broaden the learning module with additional sections
+- :material-file: Create extra examples
+- :material-alert: Fix errors
 
-**Bouw met ons mee** aan de community en [neem contact met ons op](https://formulieren.kadaster.nl/contact-pdok)! Ook staan we open voor **[pull requests](https://github.com/PDOK/leermodule-ogc-api/pulls)**. 
+**Help us build** the community and [get in touch](https://formulieren.kadaster.nl/contact-pdok)! We also welcome **[pull requests](https://github.com/PDOK/leermodule-ogc-api/pulls)**.
 
 ## Use cases
 
-Wij zijn benieuwd naar wat je hebt gemaakt met de OGC API's. Wij zijn altijd op zoek naar use cases om de meerwaarde van PDOK aan te tonen. Stuur ons je mooiste kaarten, viewers en andere toepassingen via [Ons contactformulier](https://formulieren.kadaster.nl/contact-pdok). Mooie voorbeelden zetten wij graag in de [etalage](https://www.pdok.nl/inspiratie)! 
+We are curious what you have built with OGC APIs. We are always looking for use cases to demonstrate PDOK’s added value. Send us your best maps, viewers, and other applications via [our contact form](https://formulieren.kadaster.nl/contact-pdok). We would love to showcase great examples in the [showcase](https://www.pdok.nl/inspiratie).
 
-## Blijf in contact
+## Stay connected
 
-Je kunt in contact komen met de geocommunity via het [Geoforum](https://geoforum.nl/). Hier kun je vragen stellen over geodata en helpen mensen elkaar. Ook plaatst PDOK hier nieuwsberichten, bijvoorbeeld over nieuwe datasets en andere ontwikkelingen. 
+You can connect with the geo community through [Geoforum](https://geoforum.nl/). There you can ask questions about geodata and help each other. PDOK also posts news there, for example about new datasets and other developments.
 
-![Het Geoforum](assets/Geoforum.png)
+![Geoforum](assets/Geoforum.png)
 
-Wil je per mail op de hoogte blijven van nieuws en nieuwe datasets van PDOK? Abonneer je dan op onze [Attenderingsservice](https://www.pdok.nl/attenderingsservice).
+Want to stay informed by email about PDOK news and new datasets? Subscribe to our [Alerting service](https://www.pdok.nl/attenderingsservice).
 
 ## Events
 
-- Geonovum, de Nederlandse stichting voor gestandaardiseerde uitwisseling van geodata, organiseert regelmatig bijeenkomsten. Kijk op [de agenda van Geonovum](https://www.geonovum.nl/agenda)
-- OSGeo.NL, de Nederlandse stichting die open source software voor geodata stimuleert, organiseert jaarlijks de FOSS4G conferentie: [OSGeo.NL](https://osgeo.nl/)
+- Geonovum, the Dutch foundation for standardized geodata exchange, regularly organizes events. See [Geonovum’s agenda](https://www.geonovum.nl/agenda)
+- OSGeo.NL, the Dutch foundation that promotes open source software for geodata, organizes the annual FOSS4G conference: [OSGeo.NL](https://osgeo.nl/)

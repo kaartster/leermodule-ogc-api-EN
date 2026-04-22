@@ -1,84 +1,80 @@
-# Introductie
+# Introduction
 
-Welkom bij de Leermodule “Geodata bevragen en gebruiken met de OGC API’s van PDOK” !
+Welcome to the learning module “Querying and using geodata with PDOK OGC APIs”!
 
-In deze leermodule ga je aan de slag met de OGC API’s van [PDOK](https://www.pdok.nl/) (Publieke Dienstverlening Op de Kaart). PDOK is hét geodataplatform van de Nederlandse overheid. Je leert in deze leermodule hoe je met behulp van OGC API’s geografische data in je browser kunt bekijken, hoe je de data kunt bevragen en hoe je de data op een interactieve kaart kunt tonen. Denk bijvoorbeeld aan een kaart waarop je kunt zien hoeveel inwoners er bij jou in de buurt wonen. 
+In this learning module, you will work with OGC APIs from [PDOK](https://www.pdok.nl/) (Public Services on the Map). PDOK is the geodata platform of the Dutch government. In this module, you will learn how to view geographic data in your browser, query that data, and show it on an interactive map using OGC APIs. For example, think of a map that shows how many people live in your area.
 
-!!! info "Doe mee!"
+!!! info "Join in!"
 
-	Help ons mee met het verder verbeteren van deze leermodule! [Suggesties en verbetervoorstellen](#doe-mee) zijn welkom. 
+Help us improve this learning module further! [Suggestions and improvement proposals](#join-in) are welcome.
 
-## Wat is een OGC API? 
+## What is an OGC API?
 
-Een OGC API is een gestandaardiseerde interface voor het bekijken en bevragen van geografische data. Met een API, een Application Programming Interface, kunnen ontwikkelaars op een eenvoudige manier data van andere bronnen in hun eigen software integreren. Een API is dus een stopcontact voor data. Je hebt, in tegenstelling tot vroeger, geen specifieke kennis over geodata meer nodig om dit te kunnen. 
-De OGC API standaard is ontwikkeld door het OGC. Het OGC (Open Geospatial Consortium) is een wereldwijde organisatie die standaarden voor het uitwisselen van geodata maakt. 
-OGC API is een wereldwijde standaard. Dat zorgt ervoor dat iedereen op dezelfde manier geodata kan gebruiken. Dat bespaart een hoop tijd, geld en frustratie. 
+An OGC API is a standardized interface for viewing and querying geographic data. An API, an Application Programming Interface, allows developers to integrate data from other sources into their own software in a simple way. An API is therefore like a power socket for data. Unlike in the past, you no longer need specific geodata knowledge to do this.
+The OGC API standard was developed by OGC. OGC (Open Geospatial Consortium) is a global organization that creates standards for exchanging geodata.
+OGC API is a global standard. That ensures everyone can use geodata in the same way. It saves a lot of time, money, and frustration.
 
-Onderstaand overzicht laat zien hoe de OGC API standaard is gebouwd met bouwblokken. Al deze bouwblokken bevatten één of meerdere specificaties die door OGC zijn opgesteld en door de geocommunity zijn goedgekeurd.
+The overview below shows how the OGC API standard is built from building blocks. All these building blocks contain one or more specifications defined by OGC and approved by the geo community.
 
-![De OGC API bouwblokken](assets/ogc-api-building-blocks.png)
+![The OGC API building blocks](assets/ogc-api-building-blocks.png)
 
-!!! info "OGC API bouwblokken"
+!!! info "OGC API building blocks"
 
-	Voor meer informatie over de OGC API bouwblokken, zie [Achtergrondinformatie](./achtergrondinformatie/Wat zijn OGC APIs.md)
+For more information about the OGC API building blocks, see [Background information](./achtergrondinformatie/Wat zijn OGC APIs.md)
 
-## Voor wie is deze leermodule bedoeld?
+## Who is this learning module for?
 
-In eerste instantie is deze leermodule bedoeld voor IT-studenten. Jij bent bijvoorbeeld web developer of data-analist (in opleiding). Je hoeft geen ervaring met geodata te hebben om deze module te kunnen volgen. 
+This learning module is primarily intended for IT students. For example, you may be a web developer or data analyst (in training). You do not need prior experience with geodata to follow this module.
 
-## Wat ga je leren?
+## What will you learn?
 
-!!! abstract "Leerdoelen"
+!!! abstract "Learning goals"
 
-	Na voltooiing van de leermodule:
+    After completing the learning module:
 
-	- Ben je je bewust van de meerwaarde van geo-informatie;
-	- Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's;
-	- Ben je bekend met PDOK en het Kadaster en wat zij doen;
-	- Ken je de mogelijkheden van geodata en kun je voorbeelden van toepassingen noemen;
-	- Weet je wat een OGC API is, hoe die in elkaar zit, kun je de verschillende onderdelen benoemen en wat die onderdelen doen;
-	- Weet je welke onderdelen van OGC API PDOK heeft geïmplementeerd en hoe PDOK dat heeft gedaan;
-	- Weet je hoe een webmap werkt;
-	- Kun je de landing page van de PDOK OGC API's gebruiken;
-	- Kun je de URL's van de OGC API's vinden en gebruiken;
-	- Kun je API GET requests samenstellen voor OGC API's:
-		- Kun je featuredata bevragen met OGC API - Features;
-		- Kun je tiles opvragen met OGC API - Tiles;
-	- Kun je OGC API's toevoegen aan een webmap.
+    - You understand the added value of geoinformation;
+    - You understand the added value of publishing geodata through standardized APIs;
+    - You know PDOK and Kadaster and what they do;
+    - You know the possibilities of geodata and can name example applications;
+    - You know what an OGC API is, how it is structured, can name its different parts, and explain what those parts do;
+    - You know which OGC API parts PDOK has implemented and how PDOK implemented them;
+    - You know how a web map works;
+    - You can use the PDOK OGC APIs landing page;
+    - You can find and use OGC API URLs;
+    - You can compose API GET requests for OGC APIs:
+        - You can query feature data with OGC API - Features;
+        - You can request tiles with OGC API - Tiles;
+    - You can add OGC APIs to a web map.
 
-	Kortom: je kunt straks OGC API's gebruiken en implementeren. 
+    In short: you will be able to use and implement OGC APIs.
 
-## Benodigde voorkennis
+## Required prior knowledge
 
-Om deze leermodule goed te kunnen volgen, is het handig dat je al kunt werken met (REST) API's en data. Daarnaast is basiskennis web development en JavaScript noodzakelijk. En tot slot kun je omgaan met de commandline. 
+To follow this learning module well, it helps if you can already work with (REST) APIs and data. In addition, basic web development and JavaScript knowledge is required. Finally, you should be comfortable with the command line.
 
-## Uit welke onderdelen bestaat deze leermodule?
+## What parts does this learning module contain?
 
-Deze leermodule bestaat uit vier onderdelen. Afhankelijk van je voorkennis kun je kiezen hoe je door de stof heen gaat.
+This learning module consists of four parts. Depending on your prior knowledge, you can choose how to go through the material.
 
-### 👉 Nieuw met OGC API’s en geografische webservices?
-Begin dan bij **Achtergrondinformatie** en werk de onderdelen op volgorde door.
+### 👉 New to OGC APIs and geographic web services?
+Start with **Background information** and complete the parts in order.
 
-### 👉 Al bekend met WMS, WMTS en WFS?
-Dan kun je **Achtergrondinformatie** overslaan en direct starten met **OGC API – Tiles** of **OGC API – Features**.
+### 👉 Already familiar with WMS, WMTS, and WFS?
+Then you can skip **Background information** and start directly with **OGC API – Tiles** or **OGC API – Features**.
 
-### Overzicht van de onderdelen
+### Overview of parts
 
-| Onderdeel | Beschrijving |
+| Part | Description |
 | ----------- | ----------- |
-| [Achtergrondinformatie](./achtergrondinformatie/Introductie.md) | *Wat is geografische data? Wat zijn OGC API’s? En wat doet PDOK?* |
-| [OGC API – Tiles](./tiles/Introductie.md) | *Bekijk geodata op de kaart* |
-| [OGC API – Features](./features/Introductie.md) | *Maak een interactieve kaart: Vraag objectinformatie op, werk op een interactieve manier met data* |
-| [Afronding](Afronding.md) |  |
+| [Background information](./achtergrondinformatie/Introductie.md) | *What is geographic data? What are OGC APIs? And what does PDOK do?* |
+| [OGC API – Tiles](./tiles/Introductie.md) | *View geodata on the map* |
+| [OGC API – Features](./features/Introductie.md) | *Build an interactive map: request object information and work with data interactively* |
+| [Wrap-up](Afronding.md) |  |
 
-## Doe mee!
+## Join in!
 
-Sommige onderdelen zijn nog in ontwikkeling en nog niet compleet. Doe met ons mee!
-	
-Heb je suggesties voor aanvullingen, verbeteringen of zie je een fout? Die zijn altijd welkom!
+Some parts are still under development and not complete yet. Join us!
 
-[Maak een issue aan op GitHub](https://github.com/PDOK/leermodule-ogc-api/issues) of [maak een pull request](https://github.com/PDOK/leermodule-ogc-api/pulls). 
+Do you have suggestions for additions or improvements, or did you spot an error? They are always welcome!
 
-
-
-
+[Create an issue on GitHub](https://github.com/PDOK/leermodule-ogc-api/issues) or [open a pull request](https://github.com/PDOK/leermodule-ogc-api/pulls).

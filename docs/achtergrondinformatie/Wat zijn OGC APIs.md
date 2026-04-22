@@ -1,6 +1,6 @@
-# Wat zijn OGC API’s? 
+# What are OGC APIs?
 
-**:arrow_right: Bekijk eerst dit filmpje:**
+**:arrow_right: Watch this video first:**
 
 <div class="video-wrapper">
   <iframe src="https://www.youtube-nocookie.com/embed/hNmZJ1itqfM"
@@ -11,47 +11,47 @@
   </iframe>
 </div>
 
-Een OGC API is een gestandaardiseerde interface waarmee gebruikers en systemen geodata kunnen bevragen en bekijken via het internet. Een API, een Application Programming Interface, kan door mensen gebruikt worden om data op te vragen. Maar nog vaker worden API’s gebruikt door systemen (machines) om met elkaar te praten. Ontwikkelaars kunnen op die manier op een eenvoudige manier data van andere bronnen in hun eigen software integreren. Een API is dus een stopcontact voor data. Je hebt, in tegenstelling tot vroeger, geen specifieke kennis over geodata meer nodig om dit te kunnen.  
+An OGC API is a standardized interface that allows users and systems to query and view geodata via the internet. An API, an Application Programming Interface, can be used by people to request data. But even more often, APIs are used by systems (machines) to communicate with each other. In this way, developers can easily integrate data from other sources into their own software. An API is therefore like a power socket for data. Unlike in the past, you no longer need specific geodata knowledge to do this.
 
-Een OGC API volgt de API standaarden opgesteld door het Open Geospatial Consortium (OGC). Dat is een wereldwijde organisatie die open standaarden maakt voor het geo-informatiedomein. De standaard schrijft precies voor hoe de interface opgebouwd moet zijn. De OGC API standaard is een open standaard die zeer breed omarmd wordt.  
+An OGC API follows API standards defined by the Open Geospatial Consortium (OGC). This is a global organization that creates open standards for the geoinformation domain. The standard defines exactly how the interface must be structured. The OGC API standard is an open standard that is widely adopted.
 
-Een OGC API bestaat altijd uit dezelfde onderdelen. En de OGC API kent verschillende vormen om data beschikbaar te stellen. Welke vorm je kiest, is afhankelijk van wat je precies met de geodata wil gaan doen. En voor de organisatie die de data aanbiedt met een OGC API is het afhankelijk van hoe ze de data precies beschikbaar willen stellen. 
+An OGC API always consists of the same components. OGC API also has different forms for making data available. Which form you choose depends on what you want to do with the geodata. For organizations publishing data through an OGC API, it depends on how they want to make data available.
 
-## OGC API onderdelen
+## OGC API components
 
 !!! warning "TO DO"
 
-Onderstaand overzicht laat zien hoe de OGC API standaard is gebouwd met bouwblokken. Al deze bouwblokken bevatten één of meerdere specificaties die door OGC zijn opgesteld en door de geocommunity zijn goedgekeurd.
+The overview below shows how the OGC API standard is built from building blocks. All these building blocks contain one or more specifications defined by OGC and approved by the geo community.
 
-![De OGC API building blocks](../assets/ogc-api-building-blocks.png)
+![The OGC API building blocks](../assets/ogc-api-building-blocks.png)
 
-Onderstaande tabel toont welke bouwblokken er zijn, toont of dit bouwblok bij PDOK is geïmplementeerd (stand: januari 2026) en waar dit bouwblok in deze leermodule wordt behandeld. 
+The table below shows which building blocks exist, whether they have been implemented by PDOK (status: January 2026), and where this building block is covered in this learning module.
 
-| Onderdeel                                            | Beschrijving                         | Beschikbaar bij PDOK? |                                   Leermodule                                   |
-|------------------------------------------------------|--------------------------------------|:---------------------:|:------------------------------------------------------------------------------:|
-| [**Common**](<https://ogcapi.ogc.org/common/>)       | De fundering voor elke OGC API       |           ✅           | [Features](<../features/Introductie.md>) en [Tiles](<../tiles/Introductie.md>) |
-| [**Features**](<https://ogcapi.ogc.org/features>)    | Vectordata                           |           ✅           |                    [Features](<../features/Introductie.md>)                    | 
-| [**Tiles**](<https://ogcapi.ogc.org/tiles>)          | Kaarttegels (visualisatie)           |           ✅           |                       [Tiles](<../tiles/Introductie.md>)                       |
-| [**Styles**](<https://ogcapi.ogc.org/styles>)        | Visualisatieregels                   |           ✅           |                       [Tiles](<../tiles/Introductie.md>)                       |
-| [**Records**](<https://ogcapi.ogc.org/records>)      | Metadata                             |           ❌           |                                       ❌                                        |
-| [**Maps**](<https://ogcapi.ogc.org/maps>)            | Kant-en-klare kaarten en kaarttegels |           ❌           |                                       ❌                                        |
-| [**Coverages**](<https://ogcapi.ogc.org/coverages/>) | Rasterdata                           |           ❌           |                                       ❌                                        |
-| [**EDR**](<https://ogcapi.ogc.org/edr>)              | Environment Data Retrieval           |           ❌           |                                       ❌                                        |
+| Component                                            | Description                          | Available at PDOK? |                                   Learning module                                |
+|------------------------------------------------------|--------------------------------------|:------------------:|:---------------------------------------------------------------------------------:|
+| [**Common**](<https://ogcapi.ogc.org/common/>)       | The foundation for every OGC API     |         ✅         | [Features](<../features/Introductie.md>) and [Tiles](<../tiles/Introductie.md>) |
+| [**Features**](<https://ogcapi.ogc.org/features>)    | Vector data                          |         ✅         |                    [Features](<../features/Introductie.md>)                      |
+| [**Tiles**](<https://ogcapi.ogc.org/tiles>)          | Map tiles (visualization)            |         ✅         |                       [Tiles](<../tiles/Introductie.md>)                         |
+| [**Styles**](<https://ogcapi.ogc.org/styles>)        | Visualization rules                  |         ✅         |                       [Tiles](<../tiles/Introductie.md>)                         |
+| [**Records**](<https://ogcapi.ogc.org/records>)      | Metadata                             |         ❌         |                                         ❌                                         |
+| [**Maps**](<https://ogcapi.ogc.org/maps>)            | Ready-to-use maps and map tiles      |         ❌         |                                         ❌                                         |
+| [**Coverages**](<https://ogcapi.ogc.org/coverages/>) | Raster data                          |         ❌         |                                         ❌                                         |
+| [**EDR**](<https://ogcapi.ogc.org/edr>)              | Environment Data Retrieval           |         ❌         |                                         ❌                                         |
 
-Laten we de bouwblokken één voor één eens nader bestuderen. 
+Let’s briefly examine the building blocks one by one.
 
 ### Common
 
-Het basisbouwblok dat elke OGC API minimaal nodig heeft. Dit blok bevat de landing page van een API, de API conformancepagina en de API-specificatie.
+The basic building block every OGC API needs at minimum. This block contains an API landing page, API conformance page, and API specification.
 
 ### Features
 
-Bouwblok voor het bevragen en bewerken van featuredata (vectordata). Dit bouwblok bestaat uit de volgende onderdelen:
+Building block for querying and editing feature data (vector data). This block consists of the following parts:
 
-* **Part 1: Core** 
-* **Part 2: CRS** voor het opslaan of bevragen van featuredata in een bepaald coördinaatreferentiesysteem;
-* **Part 3: Filtering** voor het op basis van een filter bevragen van featuredata; 
-* **Part 4: [CRUD](https://nl.wikipedia.org/wiki/CRUD)** voor het toevoegen, vervangen, updaten en verwijderen van featuredata.
+* **Part 1: Core**
+* **Part 2: CRS** for storing or querying feature data in a specific coordinate reference system;
+* **Part 3: Filtering** for querying feature data based on filters;
+* **Part 4: [CRUD](https://nl.wikipedia.org/wiki/CRUD)** for creating, replacing, updating, and deleting feature data.
 * *Draft* Part 5: Schemas
 * *Draft* Part 6: Property Selection
 * *Draft* Part 7: Geometry Simplification
@@ -61,29 +61,29 @@ Bouwblok voor het bevragen en bewerken van featuredata (vectordata). Dit bouwblo
 
 ### Tiles
 
-Bouwblok voor het opvragen van geodata als kaarttegels en voor het bekijken van deze data.
+Building block for requesting geodata as map tiles and viewing this data.
 
 ### Styles
 
-Bouwblok voor het aanbieden en toepassen van visualisatieregels. 
+Building block for providing and applying visualization rules.
 
 ### Records
 
-Bouwblok voor het doorzoeken en opvragen van metadata over geodata (bijvoorbeeld actualiteit, beschrijvingen, beperkingen, contactpersonen)
+Building block for searching and requesting metadata about geodata (for example timeliness, descriptions, constraints, contacts).
 
 ### Maps
 
-Bouwblok voor het opvragen van geodata als kant-en-klare kaart
+Building block for requesting geodata as a ready-to-use map.
 
 ### Coverages
 
-Bouwblok voor het opvragen van rasterdata, waarmee je ook berekeningen op celniveau kunt doen.
+Building block for requesting raster data, including cell-level computations.
 
 ### EDR
 
-Bouwblok voor Environment Data Retrieval (EDR): het integraal opvragen van ruimtelijke klimaatdata die meerdere dimensies integreert. Denk aan het opvragen van luchtvochtigheid, temperatuur en neerslag in 3D door de tijd heen.
+Building block for Environment Data Retrieval (EDR): integrally querying spatial climate data that combines multiple dimensions. Think of querying humidity, temperature, and precipitation in 3D over time.
 
-![Overzicht van OGC APIs](../assets/achtergrondinformatie/ogcapis-overview.png)
+![Overview of OGC APIs](../assets/achtergrondinformatie/ogcapis-overview.png)
 
 * Processes
 * Moving Features

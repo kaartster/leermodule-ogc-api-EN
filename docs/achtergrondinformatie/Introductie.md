@@ -1,36 +1,36 @@
-# Achtergrondinformatie
+# Background information
 
-!!! abstract "Leerdoelen"
-    Na het afronden van dit onderdeel:
+!!! abstract "Learning goals"
+    After completing this section:
 
-    - Ben je je bewust van de meerwaarde van geo-informatie;
-    - Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's; 
-    - Ben je bekend met PDOK en het Kadaster;
-    - Weet je wat een OGC API is en wat de mogelijkheden ervan zijn;
-    - Ken je voorbeelden van toepassingen met geo-informatie.
+    - You understand the added value of geoinformation;
+    - You understand the added value of publishing geodata through standardized APIs;
+    - You know PDOK and Kadaster;
+    - You know what an OGC API is and what it can do;
+    - You know examples of applications that use geoinformation.
 
-OGC API's stellen geodata beschikbaar. Wat is geodata, ook wel **ruimtelijke informatie**, eigenlijk? Deze leermodule gaat over de OGC API's van PDOK; **wat doet PDOK eigenlijk?** En **wat zijn OGC API's** eigenlijk precies? En waarom is het **belangrijk om data op een gestandaardiseerde en generieke manier te ontsluiten**? Dat behandelen we allemaal in dit onderdeel.  
+OGC APIs make geodata available. But what is geodata, also called **spatial information**? This learning module is about PDOK OGC APIs; **what does PDOK actually do?** And **what exactly are OGC APIs?** And why is it **important to publish data in a standardized and generic way**? We cover all of that in this section.
 
-## Wat is geo-informatie?
+## What is geoinformation?
 
-Geo-informatie is alle informatie met een locatiecomponent. Hoe wordt dit precies opgeslagen en beschikbaar gesteld, en wat kun je hiermee? 
+Geoinformation is any information with a location component. How is it stored and made available, and what can you do with it?
 
-[**Lees meer**](<Wat is geo-informatie.md>)
+[**Read more**](<Wat is geo-informatie.md>)
 
-## Wat doet het Kadaster / PDOK?
+## What do Kadaster / PDOK do?
 
-Deze leermodule is ontwikkeld door PDOK. PDOK is hét platform voor hoogwaardige geodata. PDOK is een dienst van het Kadaster. Wat doet PDOK precies en wat is precies de taak van het Kadaster? 
+This learning module was developed by PDOK. PDOK is the platform for high-quality geodata. PDOK is a service of Kadaster. What exactly does PDOK do and what is Kadaster’s role?
 
-[**Lees meer**](<Wat doet het Kadaster - PDOK.md>)
+[**Read more**](<Wat doet het Kadaster - PDOK.md>)
 
-## Wat zijn OGC API's?
+## What are OGC APIs?
 
-Deze leermodule gaat helemaal over OGC API's. Dat is een gestandaardiseerde interface waarmee gebruikers en systemen geodata kunnen bevragen en bekijken via het internet. De OGC API standaard schrijft precies voor hoe die interface opgebouwd moet zijn. 
+This learning module is all about OGC APIs. They are standardized interfaces with which users and systems can query and view geodata via the internet. The OGC API standard defines exactly how that interface should be structured.
 
-[**Lees meer**](<Wat zijn OGC APIs.md>)
+[**Read more**](<Wat zijn OGC APIs.md>)
 
-## Het belang van standaarden
+## The importance of standards
 
-Zonder standaarden zijn we nergens. Standaarden schrijven voor hoe informatie uitgewisseld zou moeten worden. Waarom is het belangrijk om geodata op een gestandaardiseerde manier uit te wisselen? 
+Without standards, we get nowhere. Standards define how information should be exchanged. Why is it important to exchange geodata in a standardized way?
 
-[**Lees meer**](<Het belang van standaarden.md>)
+[**Read more**](<Het belang van standaarden.md>)

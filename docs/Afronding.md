@@ -1,46 +1,46 @@
-# Afronding
+# Wrap-up
 
-Je hebt nu deze leermodule doorlopen. Voordat we helemaal afronden, is het belangrijk om even stil te staan bij wat je gedaan en geleerd hebt. 
+You have now completed this learning module. Before we fully finish, it is important to pause and reflect on what you have done and learned.
 
-## Terugblik
+## Reflection
 
-In deze terugblik kijk je aan de hand van de leerdoelen terug op jouw stappen: wat ging goed, wat vond je juist lastig en wat is je belangrijkste inzicht? Dit is het moment om even te reflecteren. Dit helpt je om te ontdekken wat je hebt geleerd en hoe je dit kunt toepassen en op welke vlakken je je nog verder kunt ontwikkelen. 
+In this reflection, you look back at your steps using the learning goals: what went well, what did you find difficult, and what is your main insight? This is the moment to reflect. It helps you discover what you learned, how to apply it, and in which areas you can still improve.
 
-!!! abstract "Leerdoelen"
+!!! abstract "Learning goals"
 
-	Na voltooiing van de leermodule:
+    After completing the learning module:
 
-	- Ben je je bewust van de meerwaarde van geo-informatie;
-	- Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's; 
-	- Ben je bekend met PDOK en het Kadaster en wat zij doen;
-	- Ken je de mogelijkheden van geodata en kun je voorbeelden van toepassingen noemen;
-	- Weet je wat een OGC API is, hoe die in elkaar zit, kun je de verschillende onderdelen benoemen en wat die onderdelen doen;
-	- Weet je welke onderdelen van OGC API PDOK heeft geïmplementeerd en hoe PDOK dat heeft gedaan;
-	- Weet je hoe een webmap werkt;
-	- Kun je de landing page van de PDOK OGC API's gebruiken;
-	- Kun je de URL's van de OGC API's vinden en gebruiken;
-	- Kun je API GET requests samenstellen voor OGC API's:
-		- Kun je featuredata bevragen met OGC API - Features;
-		- Kun je tiles opvragen met OGC API - Tiles;
-	- Kun je OGC API's toevoegen aan een webmap. 
+    - You understand the added value of geoinformation;
+    - You understand the added value of publishing geodata through standardized APIs;
+    - You know PDOK and Kadaster and what they do;
+    - You know the possibilities of geodata and can name example applications;
+    - You know what an OGC API is, how it is structured, can name its different parts, and explain what those parts do;
+    - You know which OGC API parts PDOK has implemented and how PDOK implemented them;
+    - You know how a web map works;
+    - You can use the PDOK OGC APIs landing page;
+    - You can find and use OGC API URLs;
+    - You can compose API GET requests for OGC APIs:
+        - You can query feature data with OGC API - Features;
+        - You can request tiles with OGC API - Tiles;
+    - You can add OGC APIs to a web map.
 
-	Kortom: je kunt straks OGC API's gebruiken en implementeren. 
+    In short: you can now use and implement OGC APIs.
 
 !!! warning "TO DO"
 
-    Reflecteren verder aanvullen
+    Expand reflection section
 
 
-Gefeliciteerd! Je kent nu de mogelijkheden van geodata en je kunt nu werken met OGC API’s.
+Congratulations! You now know the possibilities of geodata and can work with OGC APIs.
 
-Wij hopen dat je je nieuwe vaardigheden kunt toepassen. Heb je iets moois gemaakt met OGC API’s, dan zijn wij geïnteresseerd. Stuur ons je mooiste kaarten, viewers en andere toepassingen. 
+We hope you can apply your new skills. If you built something great with OGC APIs, we would love to hear about it. Send us your best maps, viewers, and other applications.
 
-Wij zijn natuurlijk benieuwd naar hoe je de leermodule hebt ervaren. Zie voor het geven van feedback [Community](Community.md). 
+Of course, we are curious how you experienced this learning module. For feedback, see [Community](Community.md).
 
-## Verder aan de slag
+## Continue learning
 
-Wil je meer leren over OGC API’s of verder experimenteren? Hier enkele bronnen:
+Want to learn more about OGC APIs or keep experimenting? Here are a few resources:
 
-- [OGC API workshopmateriaal van het OGC zelf](https://ogcapi-workshop.ogc.org/)
-- [Het OGC API workshopmateriaal van Geonovum](https://github.com/Geonovum/ogc-api-workshops/tree/main/04%20OGC-API-Features/handson)
-- [Volg een workshop bij Geonovum](https://www.geonovum.nl/geo-standaarden/ogc-apis#actueel)
+- [OGC API workshop material from OGC itself](https://ogcapi-workshop.ogc.org/)
+- [OGC API workshop material from Geonovum](https://github.com/Geonovum/ogc-api-workshops/tree/main/04%20OGC-API-Features/handson)
+- [Follow a workshop at Geonovum](https://www.geonovum.nl/geo-standaarden/ogc-apis#actueel)

@@ -1,347 +1,311 @@
-# Verken OGC API - Tiles in de browser
+# Explore OGC API - Tiles in the browser
 
-Laten we eerst in de browser verkennen wat je allemaal met OGC API - Tiles kunt doen. We doen dit met behulp van de landing page van de BGT OGC API. We gaan één voor één de onderdelen af, demonstreren de mogelijkheden en bekijken voorvertoningen van de data. 
+Let’s first explore in the browser what you can do with OGC API - Tiles. We do this using the landing page of the BGT OGC API. We go through the components one by one, demonstrate the possibilities, and view data previews.
 
 ## api.pdok.nl
 
-**:arrow_right: Ga naar <https://api.pdok.nl>**
+**:arrow_right: Go to <https://api.pdok.nl>**
 
-Je vind hier een overzicht van alle API’s van PDOK.  
+Here you will find an overview of all PDOK APIs.
 
-**:arrow_right: Scan de hele pagina eens.**
+**:arrow_right: Scan the whole page.**
 
-!!! question "Vraag"
+!!! question "Question"
 
-    Zijn dit allemaal OGC API’s of ook andere soorten API’s?
+    Are these all OGC APIs, or are there other API types as well?
 
-**:arrow_right: Zoek de volgende API op en klik deze aan: *Basisregistratie Grootschalige Topografie (OGC API)***
+**:arrow_right: Find and open the following API: *Basisregistratie Grootschalige Topografie (OGC API)***
 
 ## Landing page
 
-Je bent nu op de landing page van de BGT OGC API terecht gekomen. 
+You are now on the landing page of the BGT OGC API.
 
-![Screenshot van de landing page van de BGT OGC API](../assets/landing_page.png)
+![Screenshot of the BGT OGC API landing page](../assets/landing_page.png)
 
-De BGT (Basisregistratie Grootschalige Topografie) is een landelijke dataset, met objecten in de openbare ruimte die meestal door overheden beheerd worden, zoals wegen, water en groen. We gebruiken de OGC API van deze dataset als voorbeeld. De BGT is op dit moment de meest complete OGC API implementatie bij PDOK, want de BGT heeft alle bouwblokken die we bij PDOK hebben geïmplementeerd. 
+BGT (Large-Scale Topography Registry) is a national dataset with objects in public space that are usually managed by governments, such as roads, water, and green areas. We use the OGC API of this dataset as an example. At this moment, BGT is the most complete OGC API implementation at PDOK because it contains all building blocks currently implemented by PDOK.
 
-??? info "Wat is de Basisregistratie Grootschalige Topografie?"
+??? info "What is the Large-Scale Topography Registry?"
 
-    De Basisregistratie Grootschalige Topografie is een landsdekkende dataset met *grootschalige* topografie. Dit zijn geografische objecten bedoeld om te gebruiken op een groot schaalniveau: schaal 1:500 tot 1:5000. *Grootschalig* zegt in dit geval dus niets over de omvang of reikwijdte van de dataset, hoewel het wel een grote dataset is. De BGT bevat onder andere wegen, waterlichamen, groenvlakken en gebouwen. De BGT wordt bijgehouden door onder andere gemeenten, provincies en verschillende rijksoverheden. De BGT wordt onder andere gebruikt om het beheer en onderhoud van de openbare ruimte te ondersteunen. [Hier vind je meer informatie over de BGT.](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/bgt/) 
+    The BGT is a nationwide dataset with *large-scale* topography. These are geographic objects intended for use at large scales: 1:500 to 1:5000. In this context, *large-scale* does not refer to territorial extent, although it is indeed a large dataset. The BGT includes roads, water bodies, green areas, and buildings. It is maintained by municipalities, provinces, and national authorities. It is used, among other things, to support management and maintenance of public space. [More information about BGT can be found here.](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/bgt/)
 
-    De BGT is een basisregistratie. Dat wil zeggen dat wettelijk is vastgelegd hoe overheden de dataset moeten beheren (o.a. up to date houden) en gebruiken en wat de kwaliteit van de data is. Een basisregistratie heeft altijd één of meerdere bronhouders. Zij beheren de basisregistratie, maken daar afspraken over en zijn de eigenaar van de data. Er zijn nog meer basisregistraties. Een groot deel van de basisregistraties bevatten voornamelijk geodata. Bijvoorbeeld de BAG, de BRT en de BRK. [Hier vind je meer informatie over het stelsel van basisregistraties.](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/) 
+    BGT is a base registry. That means regulations define how governments must maintain and use the dataset and what quality requirements apply. A base registry always has one or more source owners. There are more base registries, and many contain geodata, such as BAG, BRT, and BRK. [More information about the base registry system can be found here.](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/)
 
-De landing page is een voor mensen leesbare beschrijving en toegangspunt van de API. Voor mensen leesbaar? Jawel, want er is ook een beschrijving die vooral voor machines is gemaakt.  
+The landing page is a human-readable API entry point and description. Human-readable? Yes—because there is also a machine-oriented version.
 
-!!! question "Vraag"
+!!! question "Question"
 
-    Waar vind je de beschrijving die voor machines is bedoeld?
+    Where can you find the machine-oriented description?
 
-**:arrow_right: Bekijk de beschrijving voor machines ook eens.**
+**:arrow_right: View the machine-oriented description.**
 
-**:arrow_right: En ga daarna terug naar de HTML-weergave (de leesbare variant)**
+**:arrow_right: Then return to the HTML view (the human-readable version).**
 
-Een landing page bevat een beschrijving van de dataset met eventueel verwijzingen naar andere bronnen, de trefwoorden en metadata. 
+A landing page contains a dataset description, references, keywords, and metadata.
 
-De BGT wordt beschikbaar gesteld als OGC API – Features en als OGC API – Tiles. Daarom bestaat de landing page uit 6 onderdelen. De landing page bestaat niet altijd uit 6 onderdelen. Een aantal onderdelen is altijd verplicht en zul je dus altijd tegenkomen. Maar een aantal onderdelen zie je alleen wanneer er een OGC API – Features is of een OGC API – Tiles. Is de dataset beschikbaar gesteld als features, dan is er een Collections pagina. Worden er ook tiles beschikbaar gesteld, dan is er ook een Tiles, Styles en Tile Matrix Sets pagina. 
+BGT is made available as OGC API – Features and OGC API – Tiles. Therefore, this landing page has 6 components. Not every landing page has 6 components: some are mandatory and always present, while others appear only for Features and/or Tiles implementations.
 
-Hieronder een handig overzicht van welke pagina bij welke API hoort. 
+| Page                                            | Explanation                                                         | When?                     |
+|-------------------------------------------------|---------------------------------------------------------------------|---------------------------|
+| [OpenAPI specification](#openapi-specification) | Description of API calls offered by this API                        | Always (OGC API - Common) |
+| [Conformance](#conformance)                     | Which OGC standards does this API conform to?                       | Always (OGC API - Common) |
+| [Collections](#collections)                     | Feature data                                                        | OGC API – Features        |
+| [Tiles](#tiles)                                 | Vector tiles (visualization)                                        | OGC API – Tiles           |
+| [Styles](#styles)                               | Styles (rendering)                                                  | OGC API – Styles          |
+| [Tile Matrix Sets](#tile-matrix-sets)           | Structure of tiles                                                  | OGC API – Tiles           |
 
-| Pagina                                          | Toelichting                                                       | Wanneer?                  |
-|-------------------------------------------------|-------------------------------------------------------------------|---------------------------|
-| [OpenAPI specification](#openapi-specification) | Beschrijving van de verschillende API calls die deze API aanbiedt | Altijd (OGC API - Common) |
-| [Conformance](#conformance)                     | Aan welke OGC standaarden voldoet deze API?                       | Altijd (OGC API - Common) |
-| [Collections](#collections)                     | Featuredata                                                       | OGC API – Features        |
-| [Tiles](#tiles)                                 | Vector tiles (visualisatie)                                       | OGC API – Tiles           |
-| [Styles](#styles)                               | Stijlen (opmaak)                                                  | OGC API – Styles          |
-| [Tile Matrix Sets](#tile-matrix-sets)           | Opbouw van de tegels                                              | OGC API – Tiles           |
+Let’s explore these pages.
 
-Laten we de verschillende pagina’s eens gaan verkennen.
-
-## OGC API - Common onderdelen
+## OGC API - Common components
 
 ### OpenAPI specification
 
-**:arrow_right: Klik op de landing page op 'OpenAPI specification'**
+**:arrow_right: On the landing page, click 'OpenAPI specification'**
 
-![Screenshot van de OpenAPI specification](../assets/openapispecification.png)
+![Screenshot of the OpenAPI specification](../assets/openapispecification.png)
 
-Hier zie je de Swagger UI van deze API. Deze toont alle API calls die deze API ondersteunt. Daarmee toont de API specification dus alle mogelijkheden van de API, en hoe je deze mogelijkheden kunt benutten. De Swagger UI geeft voorbeeldrequests en je kunt zelf requests samenstellen. Die kun je direct in de browser testen. Je krijgt direct het antwoord. 
+Here you see the API’s Swagger UI. It shows all API calls supported by this API and how to use them. The Swagger UI gives example requests and lets you compose requests and test them directly in the browser.
 
 !!! info "Swagger UI"
 
-    Swagger UI is een veelgebruikte manier voor het documenteren van API's op een dusdanige manier dat dit voor mensen leesbaar is. Lees meer op <https://swagger.io/>
+    Swagger UI is a widely used way to document APIs in a human-readable format. Read more: <https://swagger.io/>
 
-Waarom heet deze pagina 'OpenAPI specification'? Omdat deze API aan de specificatie van de OGC API voldoet, voldoet deze API automatisch ook aan de 'OpenAPI specification'. 
+Why is this page called 'OpenAPI specification'? Because by conforming to OGC API specifications, the API also conforms to OpenAPI specification requirements.
 
 !!! info "OpenAPI specification"
 
-    De OpenAPI specification is een standaard voor het formeel beschrijven van API's op een manier die leesbaar is voor machines. Een OpenAPI specificatiedocument (deze pagina) is een YAML- of JSON-document en de OpenAPI standaard schrijft voor welke informatie dit document moet bevatten. Lees meer op <https://swagger.io/specification/>
+    The OpenAPI specification is a standard for formally describing APIs in a machine-readable way. An OpenAPI document is YAML or JSON and follows a fixed structure. Read more: <https://swagger.io/specification/>
 
-Laten we meteen gebruik maken van de Swagger UI en zelf eens iets testen. 
+Let’s test something directly in Swagger UI.
 
-**:arrow_right: Klap** 'GET `/api` This document' **open**:
+**:arrow_right: Expand** 'GET `/api` This document' **:**
 
 ![GET /api This document](../assets/get-api.png)
 
-Dit is de API call die je nodig hebt om de OpenAPI specification (deze pagina dus) op te vragen. 
+This is the API call to request the OpenAPI specification itself.
 
-**:arrow_right: Klik op *Try it out***
+**:arrow_right: Click *Try it out***
 
-**:arrow_right: Klik op *Execute***
+**:arrow_right: Click *Execute***
 
-Je krijgt nu het `curl` commando dat is afgevuurd en het resultaat (response) te zien:
+You now see the executed `curl` command and the response:
 
 ![curl get api specification](../assets/openapispecification_get.png)
 
-Er is één parameter meegegeven: geef het resultaat als json. En we krijgen de specificatie inderdaad netjes te zien als json-document. 
+One parameter is passed: return result as JSON. The response indeed returns JSON. Below you also see possible response codes and meanings.
 
-Daaronder zie je nog de mogelijke response calls: de codes en wat die codes betekenen. 
+!!! question "What is the version number of this specific API?"
 
-!!! question "Wat is het versienummer van deze specifieke API?"
+??? success "Answer"
 
-??? success "Antwoord"
+    The BGT OGC API version is 1.0.0. Is it 3.0.0? No—that is the OpenAPI version (`"openapi"`). The API version is found under `"info"."version"`.
 
-    Het versienummer van de BGT OGC API is 1.0.0. Dacht je dat het 3.0.0 was? Dit is het versienummer van de gebruikte OpenAPI specification: `"OpenAPI"`. Het versienummer van deze specifieke API vind je in `"info"."version"`
-
-Je hebt nu in het kort gezien wat je met de OpenAPI specification (de Swagger UI) kunt doen. Developers kunnen hiermee snel werkende API-calls samenstellen die ze in applicaties kunnen gebruiken, om op die manier de API te implementeren. 
+You have now seen what you can do with the OpenAPI specification (Swagger UI). Developers can quickly compose working API calls and use them in applications.
 
 !!! info "OpenAPI specification Swagger UI"
 
-    We gaan hier in [één van de volgende onderdelen](<../features/Bevraag OGC API - Features met curl.md>) van deze leermodule nog veel meer gebruik van maken. 
+    We will use this much more in [one of the next sections](<../features/Bevraag OGC API - Features met curl.md>).
 
-**:arrow_right: Ga weer terug naar de landing page (klik bovenaan in de breadcrumb op BGT)**
+**:arrow_right: Return to the landing page (click BGT in the breadcrumb).**
 
 ### Conformance
 
-**:arrow_right: Klik op de landing page op 'Conformance'**
+**:arrow_right: On the landing page, click 'Conformance'**
 
-![Screenshot van de Conformance pagina](../assets/conformance.png)
+![Screenshot of the Conformance page](../assets/conformance.png)
 
-De Conformance pagina toont welke OGC-standaarden deze API implementeert. We kunnen hier dus precies zien aan welke bouwblokken en versies van de OGC API-standaarden de BGT OGC API voldoet. 
+The Conformance page shows which OGC standards this API implements. So we can see exactly which building blocks and versions the BGT OGC API conforms to.
 
-We zien ook dat sommige standaarden nog niet vastgesteld zijn, en nog in concept zijn. 
+We also see that some standards are still draft versions.
 
-**:arrow_right: Ga weer terug naar de landing page**
+**:arrow_right: Return to the landing page**
 
-## OGC API - Features onderdelen
+## OGC API - Features components
 
 ### Collections
 
-We verkennen deze pagina nu niet. We doen dit in het onderdeel [OGC API - Features](../features/Introductie.md). 
+We do not explore this page here. We cover it in the [OGC API - Features](../features/Introductie.md) section.
 
-## OGC API - Tiles onderdelen
+## OGC API - Tiles components
 
 ### Tiles
 
-**:arrow_right: Klik op de landing page op 'Tiles'**
+**:arrow_right: On the landing page, click 'Tiles'**
 
-OpenAPI specification en Conformance waren alleen maar beschrijvingen, maar nu gaan we gelukkig echt data bekijken! 
+OpenAPI specification and Conformance were descriptive pages; now we will actually look at data.
 
-![Screenshot van de Tiles pagina](../assets/tiles/tiles.png)
+![Screenshot of the Tiles page](../assets/tiles/tiles.png)
 
-Met OGC API - Tiles kunnen vector tiles beschikbaar gesteld worden, maar ook andere soorten tiles zoals luchtfoto's. We richten ons nu specifiek op **vector tiles**.
+OGC API - Tiles can serve vector tiles and also other tile types such as aerial imagery. Here we focus on **vector tiles**.
 
-De BGT dataset wordt in meerdere kaartprojecties beschikbaar gesteld als vector tiles. Dat wil zeggen dat de data wordt aangeboden als kaarttegels. Een client haalt de data tegel voor tegel op. Die tegels zijn geoptimaliseerd om compact te zijn en tegelijkertijd een goede weergave van de data te geven. Dit is een efficiënte manier van bekijken van geodata. 
+The BGT dataset is offered as vector tiles in multiple map projections. A client requests data tile by tile. Those tiles are optimized to be compact while preserving useful visualization quality.
 
 !!! info "*Vector* Tiles?"
 
-    Van oudsher zijn kaarttegels afbeeldingen. Een Web Map Service (WMS) ontsluit bijvoorbeeld kaarttegels als `png` of `jpeg` afbeeldingen. Afbeeldingen laden heel snel in, sneller dan vector-geodata zelf. Een nadeel is echter dat de tegels door de server gerenderd moeten worden. Een gebruiker of ontwikkelaar kan zelf ook geen stijl kiezen. En bij ver inzoomen worden de afbeeldingen pixelig. Bovendien draaien labels niet mee bij draaien of pannen. Vector Tiles lossen dit op: door vectordata te versimpelen en in tegels op te knippen kan deze snel gerenderd worden. Vector Tiles bieden de flexibliteit van vectordata en de snelheid van rastertegels. 
+    Traditionally, map tiles are images. A Web Map Service (WMS), for example, serves `png` or `jpeg` image tiles. Images load fast, but must be rendered server-side and users cannot easily choose styles. Zooming can become pixelated. Vector tiles solve this by simplifying vector data and splitting it into tiles. They combine vector flexibility with raster-like speed.
 
-    Zie ook [Raster of vectordata?](<../achtergrondinformatie/Wat is geo-informatie.md/#raster-of-vectordata>).
+    See also [Raster or vector data?](<../achtergrondinformatie/Wat is geo-informatie.md/#raster-or-vector-data>). 
 
-Op deze pagina vind je de verschillende Tile Matrix Sets. Voor elke projectie is een eigen Tile Matrix Set. Een Tile Matrix Set is een opdeling van de wereld in een grid in een bepaalde kaartprojectie. Kort gezegd bepaalt een kaartprojectie hoe je de aarde, een ellipsoïde, op een plat vlak projecteert. 
+On this page you find the available Tile Matrix Sets. Each projection has its own set.
 
 ![alt text](../assets/achtergrondinformatie/Projection_conique.jpg){ width="250" }![alt text](../assets/achtergrondinformatie/Projection_cylindrique.jpg){ width="250" }![alt text](../assets/achtergrondinformatie/Projection_azimutale_stereographique.jpg){ width="250" }
 
-!!! info "Coördinaatreferentiesystemen en kaartprojecties"
+!!! info "Coordinate reference systems and map projections"
 
-    Kijk voor meer informatie over dit onderwerp bij [Achtergrondinformatie](<../achtergrondinformatie/Wat is geo-informatie.md/#wat-zijn-coordinaatreferentiesystemen>)
+    For more background, see [Background information](<../achtergrondinformatie/Wat is geo-informatie.md/#what-are-coordinate-reference-systems>).
 
-**:arrow_right: Kijk en klik eens rond op deze pagina**
+**:arrow_right: Click around this page.**
 
-!!! question "Vraag"
+!!! question "Question"
 
-    Hoe kun je zien in welke Tile Matrix Sets de BGT OGC API wordt aangeboden? En welke drie zijn dit?
+    How can you see in which Tile Matrix Sets the BGT OGC API is offered? Which three are they?
 
-??? success "Antwoord"
+??? success "Answer"
 
-    Via het dropdownmenu. Deze dataset wordt in de volgende drie Tile Matrix Sets aangeboden:
+    Via the dropdown menu. This dataset is offered in:
 
     * NetherlandsRDNewQuad
     * EuropeanETRS89_LAEAQuad
     * WebMercatorQuad
 
 <a name="verschil-tussen-tile-matrix-sets"></a>
-Aan de rechterkant zie je een voorbeeldweergave van de gekozen Tile Matrix Set. Er is minimaal verschil te zien tussen de verschillende Sets. Op dit schaalniveau (zoomlevel) is het verschil ook verwaarloosbaar. Maar op kleinere schaalniveaus, dus verder uitgezoomd, maakt de gekozen kaartprojectie wel degelijk veel verschil. De vormen en groottes van landen kunnen heel erg vertekend zijn. *(in deze voorbeeldweergave kun je niet in- of uitzoomen)*
+On the right, you see a preview of the selected Tile Matrix Set. At this zoom level, differences are minimal, but at smaller scales (zoomed out), projection differences can strongly distort country shapes and sizes.
 
-Wanneer kies je welke kaartprojectie? Oftewel, wanneer heb je welke Tile Matrix Set nodig? Dat wordt bepaald door het doeleinde van jouw applicatie, het geografische gebied dat je wilt tonen en de geldende standaarden. In Nederland is de RD New-projectie de standaard. Gebruik dan de NetherlandsRDNewQuad Tile Matrix Set. Maar sommige software kan alleen overweg met Web Mercator-projectie. Gebruik dan de WebMercatorQuad Tile Matrix Set. 
+When do you choose which projection? It depends on your application goal, geographic area, and standards. In the Netherlands, RD New is the standard, so use NetherlandsRDNewQuad. Some software only supports Web Mercator, then use WebMercatorQuad.
 
-We richten ons voor nu even op de NetherlandsRDNewQuad Tile Matrix Set van de BGT. 
+**:arrow_right: Select NetherlandsRDNewQuad in the dropdown.**
 
-**:arrow_right: Selecteer de NetherlandsRDNewQuad met het dropdownmenu.**
+You may notice that URL template and example URL change with the selected Tile Matrix Set.
 
-Wellicht heb je gemerkt dat ook de URL template en Voorbeeld URL verandert als je een andere Tile Matrix Set kiest.
+The URL template is: `https://api.pdok.nl/lv/bgt/ogc/v1/tiles/NetherlandsRDNewQuad/{z}/{y}/{x}?f=mvt`
 
-De URL template is: `https://api.pdok.nl/lv/bgt/ogc/v1/tiles/NetherlandsRDNewQuad/{z}/{y}/{x}?f=mvt` 
+You can use this URL to load tiles in a client.
 
-Deze URL kun je gebruiken om de tiles van deze set in te laden in een client.
+!!! question "Question"
 
-!!! question "Vraag"
+    What do `{z}`, `{y}`, and `{x}` stand for?
 
-    Waar staan `{z}`, `{y}` en `{x}` voor, denk je?
+??? success "Answer"
 
-??? success "Antwoord"
+    In this context, `{z}/{y}/{x}` identifies one specific tile: `{z}` is zoom level, `{y}` and `{x}` identify the tile within that zoom level. [See below for more details about Tile Matrix Sets.](<#tile-matrix-sets>)
 
-    Z, Y en X zijn normaal gesproken coördinaten, maar in deze context klopt dat niet helemaal. De combinatie `{z}/{y}/{x}` duidt een specifieke kaarttegel (tile) aan. `{z}` staat voor het zoomlevel, `{y}` en `{x}` voor de tegel binnen het zoomlevel. [Zie verderop voor meer informatie over hoe Tile Matrix Sets precies werken.](<#tile-matrix-sets>)
+A client can replace `{z}/{y}/{x}` based on the user viewport. You can see an example under *Example URL*.
 
-Een client kan de parameters `{z}/{y}/{x}` vervangen door de id van de tegels waar de gebruiker naar wil kijken, op basis van de `viewport`. Een voorbeeld van wat een client dan opvraagt zie je bij *Voorbeeld URL*  (onder *URL template*)
+**:arrow_right: Click 'View metadata'.**
 
-We verdiepen ons nog even verder in de NetherlandsRDNewQuad set van deze dataset. 
+You now open the page that describes the BGT NetherlandsRDNewQuad Tile Matrix Set.
 
-**:arrow_right: Klik op 'Bekijk metadata'**
+![NetherlandsRDNewQuad for BGT](../assets/tiles/NetherlandsRDNewQuad.png)
 
-Je komt nu op de pagina terecht die voor de BGT de NetherlandsRDNewQuad Tile Matrix Set beschrijft. Je ziet hier nogmaals de URL template. En je ziet een tabel. 
+!!! question "Question"
 
-![NetherlandsRDNewQuad voor de BGT](../assets/tiles/NetherlandsRDNewQuad.png)
+    In how many zoom levels is BGT OGC API - Tiles available? Which levels are they?
 
-!!! question "Vraag"
+??? success "Answer"
 
-    In hoeveel zoomniveaus is de BGT OGC API - Tiles beschikbaar? En welke zoomniveaus zijn dat? 
+    For BGT OGC API - Tiles, tiles are available only at zoom level 12. The Tile Matrix Set supports more levels, but this API dataset offers only one.
 
-??? success "Antwoord"
+You have now seen previews of NetherlandsRDNewQuad, learned how to find available zoom levels, and identified the URL needed to use tiles in your own client or application.
 
-    De tiles van de BGT OGC API - Tiles zijn alleen beschikbaar in zoomlevel 12. Dit betekent in sommige clients dat je in andere zoomlevels niets te zien krijgt. In andere clients krijg je ook op andere zoomlevels level 12 te zien. Maar dit kan leiden tot rare visuele effecten of traagheid. 
-    
-    De NetherlandsRDNewQuad Tile Matrix Set zelf ondersteunt wel alle andere zoomniveaus. Maar de BGT OGC API - Tiles heeft er dus maar één. Zoals je eerder hebt gelezen, is de BGT bedoeld voor *grootschalige* topografie, en dus voor een specifiek schaalniveau. 
+:material-lightbulb: A dataset can be offered in one or more Tile Matrix Sets. A Tile Matrix Set is for one projection. An API does not necessarily include all zoom levels of that set.
 
-We hebben nu de voorbeeldweergave bekeken van de kaarttegels in NetherlandsRDNewQuad. Ook heb je geleerd hoe je kunt zien in welke zoomniveaus een dataset beschikbaar wordt gesteld. En bovenal weet je nu welke URL je nodig hebt, als je daadwerkelijk de tiles in een client wilt bekijken of wil implementeren in jouw applicatie. 
-
-:material-lightbulb: Een dataset kan volgens in één of meerdere Tile Matrix Sets beschikbaar gesteld worden. Een Tile Matrix Set is er voor één projectie. Een API bevat niet per se alle zoomniveaus van een Set.
-
-**:arrow_right: Ga weer terug naar de landing page**
+**:arrow_right: Return to the landing page**
 
 ### Styles
 
-**:arrow_right: Klik op de landing page op 'Styles'**
+**:arrow_right: On the landing page, click 'Styles'**
 
-![Screenshot van de Styles pagina](../assets/tiles/styles.png)
+![Screenshot of the Styles page](../assets/tiles/styles.png)
 
-Hier vind je de verschillende visualisaties (stijlen) die aangeboden worden voor deze dataset. Een stijl toont de data in kaarttegel op een bepaalde manier. De stijl bepaalt de kleuren, lijndiktes, labels, symbolen, etcetera. Eigenlijk alles wat in de legenda te zien is. 
+Here you find available visualizations (styles) for this dataset. A style defines colors, line widths, labels, symbols, etc.
 
-**:arrow_right: Kijk en klik eens rond op deze pagina**
+**:arrow_right: Click around this page.**
 
-!!! question "Vraag"
+!!! question "Question"
 
-    Hoe kun je zien in welke Styles de BGT OGC API wordt aangeboden?
+    How can you see which styles the BGT OGC API offers?
 
-??? success "Antwoord"
+??? success "Answer"
 
-    Dit kun je zien met het dropdownmenu. 
+    Via the dropdown menu.
 
-Aan de rechterkant zie je een voorbeeldweergave van de gekozen stijl. 
+On the right, you see a preview of the selected style.
 
-**:arrow_right: Probeer eens wat verschillende stijlen uit en ontdek de verschillen** 
+**:arrow_right: Try different styles and inspect the differences.**
 
-Tussen de verschillende Tile Matrix Sets zie je niet zoveel verschil, [hadden we al eerder geconcludeerd](<#verschil-tussen-tile-matrix-sets>).
+A style is always linked to one Tile Matrix Set. For BGT, two styles are offered, and each style is available for each Tile Matrix Set, resulting in six styles in total.
 
-Een Style is altijd gekoppeld aan één Tile Matrix Set. In het geval van de BGT bieden we twee stijlen aan. Elke stijl bieden we echter aan voor elke Tile Matrix Set, waarmee het totaal aantal stijlen uitkomt op 6. 
+Official styles are provided via the `styles` endpoint. You can also create custom styles and use them with the dataset in a client.
 
-Via deze weg worden officiële stijlen aangeboden. Deze zijn gemaakt door de aanbieder van de dataset en zijn via het `styles` endpoint beschikbaar. Je kunt echter ook zelf stijlen maken en via een client, in combinatie met de dataset, opvragen. Op die manier kun je de Tiles gebruiken zoals jij wilt. De mogelijkheden zijn eindeloos, je kunt bijvoorbeeld labels weg laten, of objecten zoals wegen, gebouwen of water een andere kleur geven of helemaal weglaten. Zie ook [Analyseer een voorbeeldkaart](<Analyseer een voorbeeldkaart.md>) en [Casus - Maak een kaart met OGC API - Tiles](<Casus - Maak een kaart met OGC API - Tiles.md>). 
+**:arrow_right: Select `BGT Achtergrondvisualisatie (NetherlandsRDNewQuad)`.**
 
-Laten we ons eens richten op de `BGT Achtergrondvisualisatie (NetherlandsRDNewQuad)` stijl.
+!!! question "Question"
 
-**:arrow_right: Klik deze stijl aan in het dropdownmenu.** 
+    How can you implement this style in your own application?
 
-!!! question "Vraag"
+??? success "Answer"
 
-    Hoe kun je deze stijl in een eigen applicatie implementeren of in een client inladen?
+    Use `https://api.pdok.nl/lv/bgt/ogc/v1/styles/bgt_achtergrondvisualisatie__netherlandsrdnewquad` plus JSON output (`?f=json`) as needed.
 
-??? success "Antwoord"
+**:arrow_right: View the JSON representation of the style.**
 
-    Met de URL `https://api.pdok.nl/lv/bgt/ogc/v1/styles/bgt_achtergrondvisualisatie__netherlandsrdnewquad`. Je bent er dan nog niet helemaal, want een applicatie heeft de JSON-weergave nodig.
+- In `layers`, map layers are defined.
+- In `sources`, the source for the style is defined: the BGT OGC API - Tiles.
 
-Je kunt er zelf `f=json` achteraan plakken, maar er is nog een manier om de volledige URL te vinden. 
+You have now seen style previews and learned which URL you need to use a style in a client or application.
 
-!!! question "Vraag"
+:material-lightbulb: A dataset can have multiple styles, each tied to one Tile Matrix Set.
 
-    Hoe kun je via deze pagina doorklikken naar de volledige URL van de JSON-weergave van de BGT Achtergrondvisualisatie (NetherlandsRDNewQuad) stijl?
+:material-lightbulb: If no official style suits your needs, you can create your own style.
 
-??? success "Antwoord"
-
-    1. Klik op **Bekijk metadata** 2. Klik op **Bekijk Mapbox Style**
-
-    OF: 
-
-    1. Klik op de URL `https://api.pdok.nl/lv/bgt/ogc/v1/styles/bgt_achtergrondvisualisatie__netherlandsrdnewquad` 2. Klik op **JSON** rechtsboven. 
-
-Via de URL `https://api.pdok.nl/lv/bgt/ogc/v1/styles/bgt_achtergrondvisualisatie__netherlandsrdnewquad` kun je ook de automatisch gegenereerde legenda bekijken. 
-
-**:arrow_right: Bekijk de JSON-weergave van de stijl eens**
-
-* In `layers` worden de kaartlagen binnen deze stijl gedefinieerd. Een kaartlaag is bijvoorbeeld `"water waterdeel fill0"`. Hier wordt bepaald welke kleuren het water en de omlijning van het water moeten krijgen. 
-* In `sources` wordt de bron voor de stijl gedefinieerd: de BGT OGC API - Tiles. Als het goed is, komt deze URL je bekend voor... 
-
-We hebben nu de voorbeeldweergaves bekeken van de verschillende officiële stijlen die aangeboden worden. Ook heb je geleerd welke URL je nodig hebt als je een stijl wilt gebruiken in een client of wilt implementeren in jouw applicatie. 
-
-:material-lightbulb: Een dataset kan in meerdere stijlen worden aangeboden. Een stijl is gekoppeld aan één Tile Matrix Sets. 
-
-:material-lightbulb: Is er geen officiële stijl die jou bevalt, dan kun je ook zelf een stijl maken. 
-
-**:arrow_right: Ga weer terug naar de landing page**
+**:arrow_right: Return to the landing page**
 
 ### Tile Matrix Sets
 
-**:arrow_right: Klik op de landing page op 'Tile Matrix Sets'**
+**:arrow_right: On the landing page, click 'Tile Matrix Sets'**
 
-![Screenshot van de Tile Matrix Sets pagina](../assets/tiles/tilematrixsets.png)
+![Screenshot of the Tile Matrix Sets page](../assets/tiles/tilematrixsets.png)
 
-Hier vind je een beschrijving van de eerder genoemde Tile Matrix Sets. Een Tile Matrix Set is gekoppeld aan één kaartprojectie. Dat is omdat een kaartprojectie een eigen dekkingsgebied met een eigen nulpunt, eenheid en projectie van de aardbol heeft. Eén Tile Matrix is een matrix van tegels. Een Tile Matrix Set is een samenstelling van matrices. Voor elk zoomniveau is er een matrix. Een Tile Matrix Set is er voor één kaartprojectie. 
-
-Zoals je in onderstaande afbeelding kunt zien, heeft elke tegel in de matrix een X- en Y-coördinaat, waarmee de tegel wordt aangeduid. 
+This page describes the Tile Matrix Sets. A Tile Matrix Set is linked to one map projection because each projection has its own extent, origin, units, and projection behavior.
 
 ![alt text](../assets/tiles/tilematrix.png)
 
-Een Tile Matrix Set bestaat uit meerdere Tile Matrices; voor elk zoomlevel één. Het hoogste zoomlevel heeft slechts één tegel. Hoe lager het zoomlevel, des te meer tegels. Op die manier vormt het een piramide. 
+A Tile Matrix Set contains multiple Tile Matrices: one per zoom level, forming a pyramid.
 
 ![alt text](../assets/tiles/tilematrixset.png)
 
-Zoals je kunt zien, zijn er voor de BGT OGC API drie Tile Matrix Sets. Inmiddels komen deze jou wel bekend voor.
+For BGT OGC API there are three Tile Matrix Sets.
 
-Van elke set worden alle zoomlevels beschreven. Zoals we echter eerder al hadden gezien, wordt niet elk zoomniveau ook daadwerkelijk aangeboden in deze API. 
+**:arrow_right: Click `NetherlandsRDNewQuad`**
 
-We richten ons voor nu weer even op de `NetherlandsRDNewQuad` Tile Matrix Set.
+You see a table with all zoom levels in this set. In total there are 16 zoom levels.
 
-**:arrow_right: Klik op 'NetherlandsRDNewQuad'**
+!!! question "Question"
 
-Je krijgt nu een tabel te zien waarin elk zoomniveau beschreven wordt. In totaal zijn er dus 16 zoomlevels in deze Tile Matrix Set. Je ziet dat elke tegel 256x256 cellen groot is. En zoals je kunt zien, heeft het hoogste zoomlevel één tegel. Het laagste zoomlevel heeft veel meer tegels. Daarin kun je dus weer die piramidevorm herkennen. 
+    How many tiles does zoom level 16 contain?
 
-!!! question "Vraag"
+??? success "Answer"
 
-    Hoeveel kaarttegels heeft zoomlevel 16?
+    4,294,967,296 (matrix width 65536 × matrix height 65536).
 
-??? success "Antwoord"
+**:arrow_right: Also compare with `WebMercatorQuad`.**
 
-    4.294.967.296. Dat is namelijk wat je krijgt als je de `matrix width` (65536) vermenigvuldigt met de `matrix height` (ook 65536). 
+You have now seen the formal description of available Tile Matrix Sets and gained insight into how vector tiles work.
 
-**:arrow_right: Bekijk ook eens welke verschillen er bijvoorbeeld zijn met de 'WebMercatorQuad' Tile Matrix Set.**
+:material-lightbulb: A Tile Matrix Set is a pyramid with zoom levels and one matrix per zoom level.
 
-We hebben dus bij Tile Matrix Sets een formele beschrijving gevonden van de drie Tile Matrix Sets die aangeboden worden voor deze API. Dit geeft wat meer inzicht in hoe vector tiles precies werken. 
+**:arrow_right: Return to the landing page**
 
-:material-lightbulb: Een Tile Matrix Set is een piramidevorm bestaande uit zoomlevels en voor elk zoomlevel een matrix. 
+We have now reviewed all pages of the BGT OGC API landing page.
 
-**:arrow_right: Ga weer terug naar de landing page**
+## Summary
+In this section, you explored the OGC API landing page (HTML view) in a browser. We reviewed the different pages and their relation to OGC API building blocks.
 
-We hebben nu alle pagina's van de landing page van de BGT OGC API bekeken. Laten we even kort terugblikken. 
+Hopefully this gave you a clear picture of what an OGC API can do and how to quickly inspect what data is available, specifically for OGC API - Tiles. We used the BGT dataset as example.
 
-## Samenvatting
-In dit onderdeel heb je in de browser de landing page (HTML weergave) van een OGC API verkend. We bekeken stuk voor stuk de verschillende pagina's van de landing page. Met deze landing page worden de verschillende bouwblokken van de OGC API geïmplementeerd.
-
-Hopelijk heb je hiermee een beeld van wat een OGC API allemaal kan en hoe je snel kunt zien wat voor data er in een OGC API zit, specifiek voor OGC API - Tiles. We deden dat aan de hand van de dataset Basisregistratie Grootschalige Topografie. We hebben de volgende onderdelen van de OGC API besproken:
-
-| Onderdeel             | Toelichting                                                                                          |
+| Component             | Explanation                                                                                          |
 |-----------------------|------------------------------------------------------------------------------------------------------|
-| OpenAPI specification | Swagger UI die de mogelijkheden van de API toont.                                                    |
-| Conformance           | Overzicht van de standaarden waaraan deze API voldoet.                                               |
-| Tiles                 | URL's van de tilesets van deze API en de verschillende projecties waarin de dataset wordt aangeboden |
-| Styles                | URL's en voorbeeldweergaves van de stijlen die PDOK beschikbaar stelt.                               | 
-| Tile Matrix Sets      | Beschrijving van de Tile Matrix Sets: zoomniveaus en pixelgroottes van de tegels.                    |
+| OpenAPI specification | Swagger UI that shows API capabilities.                                                              |
+| Conformance           | Overview of standards this API conforms to.                                                          |
+| Tiles                 | Tileset URLs and available projections for this dataset.                                             |
+| Styles                | URLs and previews of styles provided by PDOK.                                                        |
+| Tile Matrix Sets      | Description of Tile Matrix Sets: zoom levels and tile pixel dimensions.                              |

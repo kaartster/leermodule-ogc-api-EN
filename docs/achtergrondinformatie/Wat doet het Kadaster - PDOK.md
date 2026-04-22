@@ -1,39 +1,39 @@
-# Wat doet het Kadaster / PDOK? 
+# What do Kadaster / PDOK do?
 
-[PDOK](#pdok) (Publieke Dienstverlening Op de Kaart) is sinds 2013 hét platform voor hoogwaardige geodata. PDOK is een dienst van het [Kadaster](#kadaster). 
+[PDOK](#pdok) (Public Services on the Map) has been the platform for high-quality geodata since 2013. PDOK is a service of [Kadaster](#kadaster).
 
 ## PDOK
 
-**:arrow_right: Bekijk eerst dit filmpje:**
+**:arrow_right: Watch this video first:**
 
 <div class="video-wrapper">
   <iframe src="https://hetkadaster.bbvms.com/p/kadaster_player_zakelijk/c/5673069.html"
-          title="PDOK promofilm"
+          title="PDOK promotional video"
           frameborder="0"
           allowfullscreen>
   </iframe>
 </div>
 
-Bij [PDOK](https://www.pdok.nl/) vind je open datasets van de overheid met actuele geo-informatie. Op PDOK kunnen overheidsorganisaties hun geodata publiceren en kunnen gebruikers en specialisten deze vinden. PDOK verbindt vraag en aanbod met elkaar. Bij PDOK vind je open datasets van de overheid met actuele geo-informatie. De datasets gaan over allerlei verschillende thema’s, zoals de bodem, mobiliteit en grenzen. En zijn afkomstig van allerlei verschillende overheidsorganisaties, zoals het CBS, ministeries, Rijkswaterstaat en het Kadaster. 
+At [PDOK](https://www.pdok.nl/), you will find open government datasets with up-to-date geoinformation. Government organizations can publish their geodata on PDOK, and users and specialists can find it there. PDOK connects supply and demand. Datasets cover many themes, such as soil, mobility, and boundaries, and come from various public organizations such as CBS, ministries, Rijkswaterstaat, and Kadaster.
 
-En op PDOK vind je steeds meer datasets die gepubliceerd worden als OGC API.
+You can also find more and more datasets on PDOK that are published as OGC APIs.
 
-PDOK is een dienst van het Kadaster.
+PDOK is a service of Kadaster.
 
-![De kracht van PDOK](<../assets/achtergrondinformatie/2201_PDOK open data portaal definitief.jpg>)
+![The power of PDOK](<../assets/achtergrondinformatie/2201_PDOK open data portaal definitief.jpg>)
 
-??? info "De kracht van PDOK"
+??? info "The power of PDOK"
 
-	* Vindbare data
-	* Meetbaar gebruik
-	* Promotie van data
-	* Makkelijk in gebruik
-	* Makkelijk toegankelijk
-	* Promoten van standaarden
-	* Publicatie van metadata
-	* Centrale locatie voor documentatie
-	* Centrale locatie voor tooling
+* Discoverable data
+* Measurable use
+* Data promotion
+* Easy to use
+* Easy to access
+* Promotion of standards
+* Metadata publication
+* Central location for documentation
+* Central location for tooling
 
-## Kadaster 
+## Kadaster
 
-[Het Kadaster](https://www.kadaster.nl/) is de Nederlandse overheidsorganisatie die vastlegt wie welke rechten heeft op al het vastgoed in Nederland. En het Kadaster zorgt dat burgers, bedrijven en overheden gebruik kunnen maken van betrouwbare en actuele geo-informatie.  
+[Kadaster](https://www.kadaster.nl/) is the Dutch government organization that records who has which rights to all real estate in the Netherlands. Kadaster also ensures that citizens, businesses, and governments can use reliable and up-to-date geoinformation.

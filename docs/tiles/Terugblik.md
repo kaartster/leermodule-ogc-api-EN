@@ -1,23 +1,23 @@
-# Terugblik 
+# Reflection
 
-Je hebt het onderdeel OGC API - Tiles afgerond; gefeliciteerd! 
-In deze terugblik sta je even stil bij wat je gedaan en geleerd hebt. Aan de hand van de leerdoelen kijk je terug op jouw stappen: wat ging goed, wat vond je juist lastig en wat is je belangrijkste inzicht? 
+You have completed the OGC API - Tiles section; congratulations!
+In this reflection, you pause and review what you did and learned. Based on the learning goals, look back at your steps: what went well, what did you find difficult, and what is your main insight?
 
-Dit is het moment om even te reflecteren. Dit helpt je om te ontdekken wat je hebt geleerd en hoe je dit kunt toepassen en op welke vlakken je je nog verder kunt ontwikkelen. 
+This is the moment to reflect. It helps you discover what you learned, how to apply it, and in which areas you can still improve.
 
-!!! abstract "Leerdoelen"
+!!! abstract "Learning goals"
 
-    Na het afronden van dit onderdeel:
+    After completing this section:
 
-    - Weet je uit welke verschillende onderdelen de OGC API (- Tiles) bestaat en wat die onderdelen doen;
-    - Weet je welke onderdelen PDOK heeft geïmplementeerd; 
-    - Kun je de landing page van de PDOK OGC API's gebruiken:
-	    - Kun je voorbeelden van data via de landing page bekijken;
-	    - Kun je de URL's van de OGC API - Tiles vinden en gebruiken;
-    - Weet je hoe een webmap werkt:
-        - Kun je met OGC API - Tiles vector tiles op een webmap tonen;
-        - Kun je een stijl kiezen voor een OGC API - Tiles op een webmap.
+    - You know which parts OGC API (- Tiles) consists of and what those parts do;
+    - You know which parts PDOK has implemented;
+    - You can use the PDOK OGC APIs landing page:
+        - You can view data examples via the landing page;
+        - You can find and use OGC API - Tiles URLs;
+    - You understand how a web map works:
+        - You can show OGC API - Tiles vector tiles on a web map;
+        - You can choose a style for OGC API - Tiles on a web map.
 
 !!! warning "TO DO"
 
-    Reflecteren verder aanvullen
+    Expand reflection section

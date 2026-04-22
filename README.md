@@ -1,12 +1,7 @@
-# OGC API leermodule
+# OGC API learning module
 
-## Bijdragen en updates
+## Contributions and updates
 
-Om bijdragen toe te voegen aan de leermodule, fork de repository van GitHub. Bijdragen en pull requests zijn altijd welkom!
-Wijzigingen worden automatisch gepubliceerd via GitHub Actions.
-Wijzigingen in deze  GitHub-repository resulteren in een geautomatiseerde build en worden gepubliceerd als [Losse leermodule](https://pdok.github.io/leermodule-ogc-api/) als onderdeel van een [leermodule over OGC API’s](https://www.acceptatie.pdok.nl/leermodule).
-
-
-
-
-
+To contribute to the learning module, fork the repository on GitHub. Contributions and pull requests are always welcome!
+Changes are published automatically through GitHub Actions.
+Changes in this GitHub repository trigger an automated build and are published as a [Standalone learning module](https://pdok.github.io/leermodule-ogc-api/) as part of a [learning module about OGC APIs](https://www.acceptatie.pdok.nl/leermodule).

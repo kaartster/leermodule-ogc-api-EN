@@ -1,18 +1,18 @@
-# Terugblik
-Je hebt het onderdeel 'Achtergrondinformatie' afgerond; gefeliciteerd! 
-In deze terugblik sta je even stil bij wat je gedaan en geleerd hebt. Aan de hand van de leerdoelen kijk je terug op jouw stappen: wat ging goed, wat vond je juist lastig en wat is je belangrijkste inzicht? 
+# Reflection
+You have completed the 'Background information' section; congratulations!
+In this reflection, you pause and consider what you did and learned. Using the learning goals, look back at your steps: what went well, what did you find difficult, and what is your main insight?
 
-Dit is het moment om even te reflecteren. Dit helpt je om te ontdekken wat je hebt geleerd en hoe je dit kunt toepassen en op welke vlakken je je nog verder kunt ontwikkelen. 
+This is the moment to reflect. It helps you discover what you learned, how to apply it, and in which areas you can still improve.
 
-!!! abstract "Leerdoelen"
-    Na het afronden van dit onderdeel:
+!!! abstract "Learning goals"
+    After completing this section:
 
-    - Ben je je bewust van de meerwaarde van geo-informatie;
-    - Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's; 
-    - Ben je bekend met PDOK en het Kadaster;
-    - Weet je wat een OGC API is en wat de mogelijkheden ervan zijn;
-    - Ken je voorbeelden van toepassingen met geo-informatie.
+    - You understand the added value of geoinformation;
+    - You understand the added value of publishing geodata through standardized APIs;
+    - You know PDOK and Kadaster;
+    - You know what an OGC API is and what it can do;
+    - You know examples of applications that use geoinformation.
 
 !!! warning "TO DO"
 
-    Reflecteren verder aanvullen
+    Expand reflection section

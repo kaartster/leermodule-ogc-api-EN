@@ -1,8 +1,8 @@
-# Casus - Analyseer data met OGC API - Features in Python
-Tot nu toe hebben we vooral gekeken naar visualisatie van data. Het bekijken van geodata is maar slechts één aspect van het gebruiken van geodata. In dit onderdeel analyseer je data zodat op basis van bestaande data nieuwe informatie ontstaat. Je doet dit met behulp van verschillende Python libraries in een notebook. En aan de hand van een casus. 
+# Case study - Analyze data with OGC API - Features in Python
+Until now, we mainly focused on data visualization. Viewing geodata is only one aspect of using geodata. In this section, you analyze data to derive new information from existing data. You do this with several Python libraries in a notebook, based on a case study.
 
-Eerst introduceren we de casus waaraan je gaat werken. Daarna laad je de data uit OGC API - Features in python. Vervolgens voer je de analyse uit. En tot slot maak je een visualisatie van de resultaten van je analyse. 
+First, we introduce the case study. Then you load data from OGC API - Features into Python. Next, you run the analysis. Finally, you visualize your analysis results.
 
 !!! warning "TO DO"
 
-    Dit onderdeel is nog in ontwikkeling. 
+    This section is still under development.

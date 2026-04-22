@@ -1,19 +1,19 @@
-# Het belang van standaarden 
+# The importance of standards
 
 !!! warning "TO DO"
 
-Een OGC API volgt de OGC API standaard. Waarom is het belangrijk om geodata op een gestandaardiseerde manier te ontsluiten? Standaarden schrijven voor hoe data uitgewisseld zou moeten worden. Door dit op één en dezelfde manier volgens een vast patroon te doen begrijpen systemen en mensen elkaar. Data kan dan snel stromen en er ontstaat geen verwarring.  
+An OGC API follows the OGC API standard. Why is it important to publish geodata in a standardized way? Standards define how data should be exchanged. By doing this in one consistent way and according to a fixed pattern, systems and people can understand each other. Data can flow quickly and confusion is avoided.
 
-Het gebruiken van de standaard zorgt voor hergebruik en brede toepasbaarheid van software: organisaties kunnen gemakkelijk OGC API's gebruiken en gemakkelijk zelf data beschikbaar stellen met een OGC API. Organisaties hoeven niet meer alles zelf uit te vinden. 
+Using the standard promotes reuse and broad software applicability: organizations can easily use OGC APIs and easily publish data themselves through an OGC API. Organizations no longer have to reinvent everything.
 
-Developers weten hoe ze applicaties, zoals web viewers, makkelijk kunnen bouwen op een generieke manier. Dat heeft als voordeel dat er zoveel mogelijk frictie wordt weggenomen voor developers. 
+Developers know how to build applications, such as web viewers, in a simple and generic way. This removes as much friction as possible for developers.
 
-En gebruikers weten altijd hoe ze de OGC API kunnen gebruiken en op welke manier ze de data krijgen, zodat ze niet voor verrassingen komen te staan. 
+And users always know how to use the OGC API and how they will receive the data, so there are no surprises.
 
-Het gebruiken van standaarden bespaart zo heel veel tijd, geld en frustratie. 
+Using standards therefore saves a lot of time, money, and frustration.
 
-## Open standaarden
+## Open standards
 
-De beste standaarden zijn open standaarden. Open standaarden zijn standaarden die door iedereen gebruikt kunnen worden en waar iedereen die wil aan kan bijdragen.  
+The best standards are open standards. Open standards can be used by everyone, and anyone who wants can contribute to them.
 
-In Nederland is het vaak verplicht voor overheidsorganisaties om gebruik te maken van open standaarden.  
+In the Netherlands, government organizations are often required to use open standards.

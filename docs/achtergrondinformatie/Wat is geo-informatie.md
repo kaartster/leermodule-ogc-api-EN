@@ -1,136 +1,136 @@
-# Wat is geo-informatie?
+# What is geoinformation?
 
-Wat is geo-informatie? En hoe wordt geo-informatie precies opgeslagen? Hoe worden coördinaten precies opgeslagen? Dit behandelen we allemaal op deze pagina.
+What is geoinformation? And how is it stored exactly? How are coordinates stored? We cover all of that on this page.
 
-## De kracht van geo-informatie
+## The power of geoinformation
 
-Wat kun je precies met geo-informatie, ook wel ruimtelijke informatie genoemd? Geodata is overal om ons heen. Er wordt ook wel gezegd dat 80% van alle data over een plek op aarde gaat.
+What can you do with geoinformation, also called spatial information? Geodata is everywhere around us. People often say that 80% of all data is about a place on Earth.
 
-Data met geolocatie wordt op veel terreinen toegepast. Enkele voorbeelden:
+Data with geolocation is used in many domains. A few examples:
 
-### Stedelijke planning
+### Urban planning
 
-Gemeenten gebruiken geodata bij het plannen van nieuwe woonwijken. Hierbij spelen factoren zoals bodemgesteldheid, nabijheid van voorzieningen, verkeersstromen, waterafvoer en eigendom van percelen een belangrijke rol. Voor deze analyses worden onder andere topografische kaarten (wegen, gebouwen), kadastrale gegevens (perceelgrenzen) en 3D-modellen (hoogte-informatie) gebruikt.
+Municipalities use geodata when planning new neighborhoods. Factors such as soil conditions, proximity to facilities, traffic flows, water drainage, and parcel ownership all play an important role. For these analyses, among others, topographic maps (roads, buildings), cadastral data (parcel boundaries), and 3D models (elevation data) are used.
 
-### Leefomgeving en milieu
+### Living environment and environment
 
-Luchtkwaliteit en het voorkomen van geluidsoverlast zijn cruciale aspecten van de stedelijke leefomgeving. Analyses helpen probleemlocaties te signaleren en maatregelen te treffen. De geolocatie van sensoren in relatie tot landschap, bebouwing en infrastructuur is hierbij essentieel.
+Air quality and preventing noise nuisance are crucial aspects of urban living environments. Analyses help identify problem locations and define measures. The geolocation of sensors in relation to landscape, buildings, and infrastructure is essential.
 
-### Logistiek en dienstverlening
+### Logistics and services
 
-Voor de distributie van pakketten of het ophalen van huisvuil is het optimaal plannen van routes belangrijk om brandstof, tijd en kosten te besparen. Hiervoor zijn gegevens nodig zoals het wegennet (wegen, verkeersintensiteit), realtime verkeersinformatie en de geolocatie van ophaal- en bezorgpunten.
+For parcel distribution or household waste collection, optimal route planning is important to save fuel, time, and costs. This requires data such as road networks (roads, traffic intensity), real-time traffic information, and the geolocation of pickup and delivery points.
 
-### Hulpdiensten en risicobeheer
+### Emergency services and risk management
 
-Geoinformatie is onmisbaar voor hulpdiensten, bijvoorbeeld om risicogebieden en bijzondere locaties in kaart te brengen. Hoogtekaarten zijn belangrijk voor het inschatten van overstromingsrisico’s, en basisregistraties geven inzicht in locaties van scholen of congrescentra. Daarnaast biedt PDOK (Inspire) datasets met specifieke risicogebieden.
+Geoinformation is indispensable for emergency services, for example to map risk areas and special locations. Elevation maps are important for estimating flood risks, and base registries provide insight into locations of schools or convention centers. In addition, PDOK provides (INSPIRE) datasets with specific risk areas.
 
-!!! question "Vraag"
+!!! question "Question"
 
-    Welke andere toepassingen van geo-informatie ken jij? Schrijf een aantal voorbeelden op. 
+    Which other applications of geoinformation do you know? Write down a few examples.
 
-## Basisregistraties
+## Base registries
 
-Veel van de datasets bij PDOK zijn een basisregistratie. Wat is een basisregistratie precies?
+Many datasets at PDOK are base registries. What exactly is a base registry?
 
-Een basisregistratie is een officiële, landelijke registratie waarin gegevens worden vastgelegd die door veel overheidsorganisaties gebruikt worden. Zie het als een gezamenlijke set van centrale gegevens: één plek waar betrouwbare, actuele en uniforme gegevens staan, zodat iedereen dezelfde informatie gebruikt.
+A base registry is an official, national registry in which data used by many government organizations is recorded. Think of it as a shared set of central data: one place with reliable, up-to-date, and uniform data, so everyone uses the same information.
 
-### Kenmerken van een basisregistratie
+### Characteristics of a base registry
 
-- **Authentieke gegevens:** De informatie is juridisch vastgesteld en mag niet zomaar worden aangepast.
-- **Uniform gebruik:** Overheden en organisaties moeten deze gegevens gebruiken in hun processen.
-- **Actueel en betrouwbaar:** Er gelden strenge regels voor bijhouding en kwaliteit.
+- **Authentic data:** The information is legally established and cannot simply be changed.
+- **Uniform use:** Governments and organizations must use this data in their processes.
+- **Up-to-date and reliable:** Strict maintenance and quality rules apply.
 
-We kennen de volgende basisregistraties zonder geoinformatie:
+The following base registries do not contain geoinformation:
 
-- BRP – Basisregistratie personen
-- HR – Handelsregister
-- BRV – Basisregistratie Voertuigen (kentekenregister)
-- BRI – Basisregistratie Inkomen
+- BRP – Personal Records Database
+- HR – Trade Register
+- BRV – Vehicle Registration Database
+- BRI – Income Registry
 
-en de volgende basisregistraties met geodata waarvan PDOK (gedeeltelijk) data uitlevert:
+And the following base registries contain geodata that PDOK delivers (partly):
 
-- BRT – Basisregistratie Topografie
-- BRK – Basisregistratie Kadaster
-- WOZ – Basisregistratie Waarde Onroerende Zaken
-- BAG – Basisregistratie Adressen en Gebouwen
-- BGT – Basisregistratie Grootschalige Topografie
-- BRO – Basisregistratie Ondergrond
+- BRT – Topography Registry
+- BRK – Cadastre Registry
+- WOZ – Property Valuation Registry
+- BAG – Addresses and Buildings Registry
+- BGT – Large-scale Topography Registry
+- BRO – Subsurface Registry
 
-### Waarom is dit belangrijk?
+### Why is this important?
 
-Stel je voor dat elke overheidsorganisatie zijn eigen adressenlijst zou bijhouden. Dan krijg je fouten, bijvoorbeeld het aanvragen van een stroomaansluitingen bij verhuizingen, met dubbele gegevens en veel verwarring tot gevolg. Door één landelijke basisregistratie te gebruiken, werken alle partijen met dezelfde informatie. Dat bespaart tijd, voorkomt fouten en maakt samenwerking makkelijker.
+Imagine every government organization kept its own address list. You would get errors, such as issues when requesting utility connections during moves, duplicate records, and lots of confusion. By using one national base registry, all parties work with the same information. That saves time, prevents errors, and makes collaboration easier.
 
-[Hier vind je meer informatie over het stelsel van basisregistraties.](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/)
+[Here you can find more information about the base registry system.](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/)
 
-## Hoe wordt geodata opgeslagen?
+## How is geodata stored?
 
-Geodata kan op verschillende manieren worden opgeslagen in een bestand of database. Op welke manier dat is, heeft ook gevolgen voor wat je precies met de data kunt doen. Dit is zeker bij ruimtelijke data het geval, omdat geometrie op heel veel verschillende manier gerepresenteerd kan worden. Dit is heel erg afhankelijk van de beoogde toepassing van de data.
+Geodata can be stored in different ways in a file or database. The storage method affects what you can do with the data. This is especially true for spatial data, because geometry can be represented in many different ways. It strongly depends on the intended use of the data.
 
-## Raster- of vectordata?
+## Raster or vector data?
 
-Er worden ruwweg twee vormen van geodata onderscheiden: vectordata en rasterdata. In het geval van rasterdata wordt de informatie opgeslagen in een afbeelding. Een rasterbestand bestaat uit een vlakdekkend grid. Een rasterbestand is samengesteld uit één of meerdere banden. Elke rastercel ("pixel") in elke band heeft een numerieke waarde. Samen kunnen deze waardes een kleur voorstellen, bijvoorbeeld in een luchtfoto of satellietbeeld. Er is dan een band voor Rood, een band voor Groen en een band voor Blauw (RGB). Maar de waardes in enkelbands rasterbestanden kunnen ook iets anders voorstellen, zoals hoogte of temperatuur. 
+There are roughly two forms of geodata: vector data and raster data. In raster data, information is stored in an image. A raster file consists of a complete grid. A raster file contains one or more bands. Each raster cell ("pixel") in each band has a numeric value. Together these values can represent a color, for example in an aerial photo or satellite image. Then there is a band for Red, Green, and Blue (RGB). But values in single-band raster files can also represent something else, such as elevation or temperature.
 
-Vectordata gebruikt een totaal andere benadering om geodata op te slaan. In het geval van vectordata wordt de informatie opgeslagen in een tabel met een geometrie. De geometrie kan opgeslagen worden als verzameling coördinaten in een attribuut in een tabel (met een eigen datatype *geometrie*). De geometrie kan een punt, lijn of vlak zijn. 
+Vector data uses a completely different approach. In vector data, information is stored in a table with geometry. Geometry can be stored as a set of coordinates in a table attribute (with its own *geometry* data type). The geometry can be a point, line, or polygon.
 
-Rasterdata en vectordata hebben door de specifieke manier waarop data wordt opgeslagen verschillende voor- en nadelen ten opzichte van elkaar. Daardoor kennen raster- en vectordata hun eigen toepassingsgebieden.
+Raster and vector data each have specific advantages and disadvantages due to how the data is stored. That is why raster and vector data have different use cases.
 
-Over het algemeen (er zijn uitzonderingen mogelijk) wordt rasterdata gebruikt voor continu fenomenen, zoals hoogte en temperatuur. Dit soort natuurlijke fenomenen heeft geen harde grenzen en loopt continu door. Dit in tegenstelling tot discrete informatie, zoals gebouwen en administratieve grenzen. Die beginnen en eindigen op posities die wij als mensen hebben aangewezen. Voor discrete fenomenen gebruiken we dan ook vooral vectordata.
+In general (with exceptions), raster data is used for continuous phenomena such as elevation and temperature. These natural phenomena have no hard boundaries and continue continuously. This differs from discrete information, such as buildings and administrative boundaries, which start and end at positions defined by people. For discrete phenomena, we mainly use vector data.
 
 !!! warning "TO DO"
 
-    Afbeelding toevoegen
+    Add image
 
-Voorbeelden van rasterdatasets bij PDOK zijn:
+Examples of raster datasets at PDOK:
 
-* [Algemeen Hoogtebestand Nederland (AHN)](https://www.pdok.nl/introductie/-/article/actueel-hoogtebestand-nederland-ahn) voor hoogtedata
+* [Actueel Hoogtebestand Nederland (AHN)](https://www.pdok.nl/introductie/-/article/actueel-hoogtebestand-nederland-ahn) for elevation data
 * [Landelijk Grondgebruik Nederland](https://www.pdok.nl/introductie/-/article/landelijk-grondgebruik-nederland-lgn-)
-* [Luchtfoto RGB](https://www.pdok.nl/introductie/-/article/pdok-luchtfoto-rgb-open-) en [Luchtfoto Infrarood](https://www.pdok.nl/introductie/-/article/pdok-luchtfoto-infrarood-open-)
+* [Aerial photo RGB](https://www.pdok.nl/introductie/-/article/pdok-luchtfoto-rgb-open-) and [Aerial photo Infrared](https://www.pdok.nl/introductie/-/article/pdok-luchtfoto-infrarood-open-)
 
-Voorbeelden van vectordatasets bij PDOK zijn:
+Examples of vector datasets at PDOK:
 
-* De [BRT Achtergrondkaart](https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-achtergrondkaarten-brt-a-)
-* De [Basisregistratie Adressen en Gebouwen (BAG)](https://www.pdok.nl/introductie/-/article/basisregistratie-adressen-en-gebouwen-ba-1) voor onder andere gebouwen
-* [CBS Wijken en Buurten](https://www.pdok.nl/introductie/-/article/cbs-wijken-en-buurten) voor statistische gegevens over buurten, wijken en gemeenten
+* The [BRT Background Map](https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-achtergrondkaarten-brt-a-)
+* The [Addresses and Buildings Registry (BAG)](https://www.pdok.nl/introductie/-/article/basisregistratie-adressen-en-gebouwen-ba-1), including building data
+* [CBS Wijken en Buurten](https://www.pdok.nl/introductie/-/article/cbs-wijken-en-buurten), with statistical data on neighborhoods, districts, and municipalities
 
-## Wat zijn coördinaatreferentiesystemen?
+## What are coordinate reference systems?
 
 !!! warning "TO DO"
 
-Geodata is altijd opgeslagen in een bepaald coördinaatreferentiesysteem (CRS). Het coördinaatreferentiesysteem bepaalt hoe de coördinaten worden opgeslagen. Oftewel: hoe de positie op aarde bepaald wordt. De aarde is niet plat hoewel kaarten dat wel zijn. Helaas is de aarde ook niet perfect rond of ovaal.
+Geodata is always stored in a specific coordinate reference system (CRS). The CRS determines how coordinates are stored. In other words: how a position on Earth is determined. The Earth is not flat, although maps are. Unfortunately, Earth is also not perfectly round or oval.
 
 <div style="text-align: center;">
-    <img src="../../assets/achtergrondinformatie/geoid-c2.jpg" alt="Geoïde" width=40% />
+    <img src="../../assets/achtergrondinformatie/geoid-c2.jpg" alt="Geoid" width=40% />
 </div>
 
-De aarde lijkt meer op een aardappel, met bergen en valleien. We noemen dit een geoïde. Helaas is die geoïde eindeloos complex, wat het lastig maakt om de exacte vorm in een computer op te slaan. Daarom wordt geprobeerd om de vorm van de geoïde te benaderen met een ellipsoïde (3D ovaal). Dat leidt echter wel tot afwijkingen: de ene plek zal meer afwijken van de ellipsoïde dan de andere plek. Maar voor veel toepassingen op wereldwijde schaal is enige afwijking niet zo erg.
+Earth looks more like a potato, with mountains and valleys. We call this a geoid. That geoid is infinitely complex, which makes it hard to store its exact shape in a computer. Therefore, people approximate it with an ellipsoid (3D oval). This leads to deviations: some places deviate more from the ellipsoid than others. But for many global-scale applications, some deviation is acceptable.
 
 <div style="text-align: center;">
-    <img src="../../assets/achtergrondinformatie/geoid1_lg.png" alt="Geoïde" width=60% />
+    <img src="../../assets/achtergrondinformatie/geoid1_lg.png" alt="Geoid" width=60% />
 </div>
 
-Voor veel toepassingen is nauwkeurigheid wel belangrijk. Je hebt dan een ellipsoïde nodig die goed aansluit op het stukje aarde waarin je geïnteresseerd bent. Op andere plekken op de aarde zal die ellipsoïde totaal niet aansluiten. We noemen dat ook wel een lokaal coördinatenstelsel. Het Rijksdriehoeksstelsel, ook wel "RD Amersfoort" genoemd, is zo'n lokaal coördinatenstelsel. RD Amersfoort biedt hoge nauwkeurigheid in Nederland. Buiten Nederland is het echter nutteloos.
+For many applications, accuracy is important. Then you need an ellipsoid that closely matches the part of Earth you are interested in. In other parts of Earth, that ellipsoid may not match at all. This is called a local coordinate system. The Dutch national grid (Rijksdriehoeksstelsel), also called "RD Amersfoort", is such a local coordinate system. RD Amersfoort provides high accuracy in the Netherlands, but is not useful outside the Netherlands.
 
-We zijn er nog niet helemaal. Wat als je zo'n ellipsoïde op een plat vlak probeert te projecteren? Stel je voor dat je een mandarijn pelt en de schil in één stuk hebt. Als je die op een plat vlak legt, ontstaan er gaten. Kaartprojecties zijn manieren om de aardbol zodanig te vervormen en uit te rekken, dat die gaten worden opgevuld. Daar zijn veel verschillende manieren voor.
+We are still not done. What if you project that ellipsoid onto a flat surface? Imagine peeling a mandarin and trying to lay the peel flat in one piece—you get gaps. Map projections are ways to distort and stretch the globe so these gaps are filled. There are many different methods.
 
 ![alt text](../assets/achtergrondinformatie/Projection_conique.jpg){ width="250" }![alt text](../assets/achtergrondinformatie/Projection_cylindrique.jpg){ width="250" }![alt text](../assets/achtergrondinformatie/Projection_azimutale_stereographique.jpg){ width="250" }
 
-Over het algemeen onderscheiden we drie soorten kaartprojecties:
+In general, we distinguish three kinds of map projections:
 
-* Hoekgetrouw
-* Oppervlaktegetrouw
-* Afstandsgetrouw
+* Conformal
+* Equal-area
+* Equidistant
 
-Vaak gaan projecties en coördinaatstelsels hand in hand. Ze zijn echter wel twee verschillende dingen. Coördinatenstelsels zijn vooral belangrijk voor de correcte **opslag** van geodata. Projecties zijn vooral belangrijk voor de correcte **visualisatie** van geodata.
+Projections and coordinate systems often go hand in hand, but they are two different things. Coordinate systems are mainly important for correct **storage** of geodata. Projections are mainly important for correct **visualization** of geodata.
 
-Dit zijn de meest relevante coördinaatreferentiesystemen:
+These are the most relevant coordinate reference systems:
 
-* **WGS84** is vooral geschikt voor wereldwijde datasets. Het is ook wel bekend als 'lat-long' en is het coördinaatreferentiesysteem dat voor GPS wordt gebruikt. Het is waarschijnlijk het meest bekende en meest gebruikte CRS.
-* **ETRS89** is het officiële Europese CRS.
-* **RD New / Amersfoort** is het officiële Nederlandse coördinaatreferentiesysteem. Het gebruikt meters als eenheid voor de X- en Y-coördinaten.
+* **WGS84** is mainly suitable for global datasets. It is also known as 'lat-long' and is the CRS used for GPS. It is probably the best-known and most-used CRS.
+* **ETRS89** is the official European CRS.
+* **RD New / Amersfoort** is the official Dutch coordinate reference system. It uses meters for X and Y coordinates.
 
-En dit zijn de bekendste kaartprojecties:
+And these are the best-known map projections:
 
 * **UTM**
-* **Web Mercator** ook wel bekend als 'Pseudo-Mercator'
+* **Web Mercator**, also known as 'Pseudo-Mercator'
 
-Zie ook <https://www.nsgi.nl/coordinatenstelsels-en-transformaties/overzicht-coordinatenstelsels>
+See also <https://www.nsgi.nl/coordinatenstelsels-en-transformaties/overzicht-coordinatenstelsels>

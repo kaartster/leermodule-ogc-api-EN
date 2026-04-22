@@ -1,27 +1,26 @@
-# Introductie OGC API - Tiles
+# Introduction OGC API - Tiles
 
-!!! abstract "Leerdoelen"
+!!! abstract "Learning goals"
 
-    Na het afronden van dit onderdeel:
+    After completing this section:
 
-    - Weet je uit welke verschillende onderdelen de OGC API (- Tiles) bestaat en wat die onderdelen doen; 
-    - Weet je welke onderdelen PDOK heeft geïmplementeerd;
-    - Kun je de landing page van de PDOK OGC API's gebruiken:
-	    - Kun je voorbeelden van data via de landing page bekijken;
-	    - Kun je de URL's van de OGC API - Tiles vinden en gebruiken;
-    - Weet je hoe een webmap werkt:
-        - Kun je met OGC API - Tiles vector tiles op een webmap tonen;
-        - Kun je een stijl kiezen voor een OGC API - Tiles op een webmap.
+    - You know which parts OGC API (- Tiles) consists of and what those parts do;
+    - You know which parts PDOK has implemented;
+    - You can use the PDOK OGC APIs landing page:
+        - You can view data examples via the landing page;
+        - You can find and use OGC API - Tiles URLs;
+    - You understand how a web map works:
+        - You can show OGC API - Tiles vector tiles on a web map;
+        - You can choose a style for OGC API - Tiles on a web map.
 
-In dit onderdeel verkennen we OGC API - Tiles en maken we een kaart. 
+In this section, we explore OGC API - Tiles and build a map.
 
-OGC API - Tiles ontsluit kaarttegels, bedoeld voor het bekijken van geodata. Een online kaartapplicatie kan niet zonder achtergrondkaart en dit is waar OGC API - Tiles in uitblinkt. Performance, flexibiliteit en gebruiksgemak staan voorop. 
+OGC API - Tiles publishes map tiles intended for viewing geodata. An online map application cannot do without a basemap, and this is where OGC API - Tiles excels. Performance, flexibility, and ease of use are key.
 
-Eerst leer je met behulp van de API landing page wat de verschillende mogelijkheden zijn en krijg je een voorvertoning van de data. En daarna maak je zelf een webmap met de OGC API - Tiles, waarmee eindgebruikers de geodata kunnen bekijken.
+First, using the API landing page, you learn what the different possibilities are and get a preview of the data. Then you build your own web map with OGC API - Tiles so end users can view geodata.
 
-!!! info "Je gaat werken met:"
+!!! info "You will work with:"
 
-    - Internetbrowser
-    - Code-editor
+    - Web browser
+    - Code editor
     - MapLibre (JavaScript)
-
